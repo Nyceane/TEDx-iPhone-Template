@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* TEDxAlcatrazAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TEDxAlcatrazAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1F64ED5212935720003A8687 /* InformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED3F12935720003A8687 /* InformationController.m */; };
+		1F64ED5312935720003A8687 /* InformationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED4012935720003A8687 /* InformationController.xib */; };
+		1F64ED5412935720003A8687 /* ScheduleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED4312935720003A8687 /* ScheduleController.m */; };
+		1F64ED5512935720003A8687 /* ScheduleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED4412935720003A8687 /* ScheduleController.xib */; };
+		1F64ED5612935720003A8687 /* SpeakerDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED4712935720003A8687 /* SpeakerDetailController.m */; };
+		1F64ED5712935720003A8687 /* SpeakerDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED4812935720003A8687 /* SpeakerDetailController.xib */; };
+		1F64ED5812935720003A8687 /* SpeakersResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED4A12935720003A8687 /* SpeakersResultController.m */; };
+		1F64ED5912935720003A8687 /* SpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED4C12935720003A8687 /* SpeakerViewController.m */; };
+		1F64ED5A12935720003A8687 /* SpeakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED4D12935720003A8687 /* SpeakerViewController.xib */; };
+		1F64ED5B12935720003A8687 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED5012935720003A8687 /* MapController.m */; };
+		1F64ED5C12935720003A8687 /* MapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED5112935720003A8687 /* MapController.xib */; };
+		1F64ED6A12935733003A8687 /* mapon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED6212935733003A8687 /* mapon.png */; };
+		1F64ED6B12935733003A8687 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED6312935733003A8687 /* map.png */; };
+		1F64ED6C12935733003A8687 /* infomationon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED6412935733003A8687 /* infomationon.png */; };
+		1F64ED6D12935733003A8687 /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED6512935733003A8687 /* information.png */; };
+		1F64ED6E12935733003A8687 /* schedule.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED6612935733003A8687 /* schedule.png */; };
+		1F64ED6F12935733003A8687 /* scheduleon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED6712935733003A8687 /* scheduleon.png */; };
+		1F64ED7012935733003A8687 /* speakers.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED6812935733003A8687 /* speakers.png */; };
+		1F64ED7112935733003A8687 /* speakerson.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64ED6912935733003A8687 /* speakerson.png */; };
+		1F64ED841293575C003A8687 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED791293575C003A8687 /* NSObject+SBJSON.m */; };
+		1F64ED851293575C003A8687 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED7B1293575C003A8687 /* NSString+SBJSON.m */; };
+		1F64ED861293575C003A8687 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED7D1293575C003A8687 /* SBJSON.m */; };
+		1F64ED871293575C003A8687 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED7F1293575C003A8687 /* SBJsonBase.m */; };
+		1F64ED881293575C003A8687 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED811293575C003A8687 /* SBJsonParser.m */; };
+		1F64ED891293575C003A8687 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ED831293575C003A8687 /* SBJsonWriter.m */; };
+		1F64ED8C1293576D003A8687 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F64ED8B1293576D003A8687 /* MapKit.framework */; };
+		1F64EDC41293658E003A8687 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64EDBE1293658E003A8687 /* Icon-72.png */; };
+		1F64EDC51293658E003A8687 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64EDBF1293658E003A8687 /* Icon-Small-50.png */; };
+		1F64EDC61293658E003A8687 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64EDC01293658E003A8687 /* Icon-Small.png */; };
+		1F64EDC71293658E003A8687 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64EDC11293658E003A8687 /* Icon-Small@2x.png */; };
+		1F64EDC81293658E003A8687 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64EDC21293658E003A8687 /* Icon.png */; };
+		1F64EDC91293658E003A8687 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F64EDC31293658E003A8687 /* Icon@2x.png */; };
+		28216C970DB411BC00E5133A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28216C960DB411BC00E5133A /* FirstViewController.m */; };
+		282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282CCBFD0DB6C98000C4EA27 /* SecondView.xib */; };
+		2840D7CE1179279E00D7F93C /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2840D7CD1179279E00D7F93C /* FirstView.xib */; };
+		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
+		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* TEDxAlcatrazAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDxAlcatrazAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TEDxAlcatrazAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDxAlcatrazAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TEDxAlcatraz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEDxAlcatraz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F5548B812A4F5F60086DA4E /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		1F64ED3E12935720003A8687 /* InformationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationController.h; sourceTree = "<group>"; };
+		1F64ED3F12935720003A8687 /* InformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationController.m; sourceTree = "<group>"; };
+		1F64ED4012935720003A8687 /* InformationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationController.xib; sourceTree = "<group>"; };
+		1F64ED4212935720003A8687 /* ScheduleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleController.h; sourceTree = "<group>"; };
+		1F64ED4312935720003A8687 /* ScheduleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleController.m; sourceTree = "<group>"; };
+		1F64ED4412935720003A8687 /* ScheduleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleController.xib; sourceTree = "<group>"; };
+		1F64ED4612935720003A8687 /* SpeakerDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerDetailController.h; sourceTree = "<group>"; };
+		1F64ED4712935720003A8687 /* SpeakerDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerDetailController.m; sourceTree = "<group>"; };
+		1F64ED4812935720003A8687 /* SpeakerDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeakerDetailController.xib; sourceTree = "<group>"; };
+		1F64ED4912935720003A8687 /* SpeakersResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakersResultController.h; sourceTree = "<group>"; };
+		1F64ED4A12935720003A8687 /* SpeakersResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakersResultController.m; sourceTree = "<group>"; };
+		1F64ED4B12935720003A8687 /* SpeakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerViewController.h; sourceTree = "<group>"; };
+		1F64ED4C12935720003A8687 /* SpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerViewController.m; sourceTree = "<group>"; };
+		1F64ED4D12935720003A8687 /* SpeakerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeakerViewController.xib; sourceTree = "<group>"; };
+		1F64ED4F12935720003A8687 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		1F64ED5012935720003A8687 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		1F64ED5112935720003A8687 /* MapController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapController.xib; sourceTree = "<group>"; };
+		1F64ED6212935733003A8687 /* mapon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapon.png; sourceTree = "<group>"; };
+		1F64ED6312935733003A8687 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		1F64ED6412935733003A8687 /* infomationon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infomationon.png; sourceTree = "<group>"; };
+		1F64ED6512935733003A8687 /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information.png; sourceTree = "<group>"; };
+		1F64ED6612935733003A8687 /* schedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schedule.png; sourceTree = "<group>"; };
+		1F64ED6712935733003A8687 /* scheduleon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scheduleon.png; sourceTree = "<group>"; };
+		1F64ED6812935733003A8687 /* speakers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakers.png; sourceTree = "<group>"; };
+		1F64ED6912935733003A8687 /* speakerson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakerson.png; sourceTree = "<group>"; };
+		1F64ED771293575C003A8687 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		1F64ED781293575C003A8687 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		1F64ED791293575C003A8687 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		1F64ED7A1293575C003A8687 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		1F64ED7B1293575C003A8687 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		1F64ED7C1293575C003A8687 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		1F64ED7D1293575C003A8687 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		1F64ED7E1293575C003A8687 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		1F64ED7F1293575C003A8687 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		1F64ED801293575C003A8687 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		1F64ED811293575C003A8687 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		1F64ED821293575C003A8687 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		1F64ED831293575C003A8687 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		1F64ED8B1293576D003A8687 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1F64EDBE1293658E003A8687 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		1F64EDBF1293658E003A8687 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		1F64EDC01293658E003A8687 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		1F64EDC11293658E003A8687 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		1F64EDC21293658E003A8687 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1F64EDC31293658E003A8687 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		28216C950DB411BC00E5133A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		28216C960DB411BC00E5133A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		282CCBFD0DB6C98000C4EA27 /* SecondView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		2840D7CD1179279E00D7F93C /* FirstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
+		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AB4B0D9B1048005BE974 /* TEDxAlcatraz_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDxAlcatraz_Prefix.pch; sourceTree = "<group>"; };
+		28AD73870D9D96C1002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TEDxAlcatraz-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TEDxAlcatraz-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+				1F64ED8C1293576D003A8687 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1F64ED4E12935720003A8687 /* Map */,
+				1F64ED4512935720003A8687 /* Speakers */,
+				1F64ED4112935720003A8687 /* Schedule */,
+				1F64ED3D12935720003A8687 /* Information */,
+				28216C950DB411BC00E5133A /* FirstViewController.h */,
+				28216C960DB411BC00E5133A /* FirstViewController.m */,
+				1D3623240D0F684500981E51 /* TEDxAlcatrazAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TEDxAlcatrazAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TEDxAlcatraz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F64ED3D12935720003A8687 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				1F64ED3E12935720003A8687 /* InformationController.h */,
+				1F64ED3F12935720003A8687 /* InformationController.m */,
+				1F64ED4012935720003A8687 /* InformationController.xib */,
+			);
+			name = Information;
+			sourceTree = "<group>";
+		};
+		1F64ED4112935720003A8687 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				1F64ED4212935720003A8687 /* ScheduleController.h */,
+				1F64ED4312935720003A8687 /* ScheduleController.m */,
+				1F64ED4412935720003A8687 /* ScheduleController.xib */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		1F64ED4512935720003A8687 /* Speakers */ = {
+			isa = PBXGroup;
+			children = (
+				1F64ED4612935720003A8687 /* SpeakerDetailController.h */,
+				1F64ED4712935720003A8687 /* SpeakerDetailController.m */,
+				1F64ED4812935720003A8687 /* SpeakerDetailController.xib */,
+				1F64ED4912935720003A8687 /* SpeakersResultController.h */,
+				1F64ED4A12935720003A8687 /* SpeakersResultController.m */,
+				1F64ED4B12935720003A8687 /* SpeakerViewController.h */,
+				1F64ED4C12935720003A8687 /* SpeakerViewController.m */,
+				1F64ED4D12935720003A8687 /* SpeakerViewController.xib */,
+			);
+			name = Speakers;
+			sourceTree = "<group>";
+		};
+		1F64ED4E12935720003A8687 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1F64ED4F12935720003A8687 /* MapController.h */,
+				1F64ED5012935720003A8687 /* MapController.m */,
+				1F64ED5112935720003A8687 /* MapController.xib */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		1F64ED761293575C003A8687 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1F64ED771293575C003A8687 /* JSON.h */,
+				1F64ED781293575C003A8687 /* NSObject+SBJSON.h */,
+				1F64ED791293575C003A8687 /* NSObject+SBJSON.m */,
+				1F64ED7A1293575C003A8687 /* NSString+SBJSON.h */,
+				1F64ED7B1293575C003A8687 /* NSString+SBJSON.m */,
+				1F64ED7C1293575C003A8687 /* SBJSON.h */,
+				1F64ED7D1293575C003A8687 /* SBJSON.m */,
+				1F64ED7E1293575C003A8687 /* SBJsonBase.h */,
+				1F64ED7F1293575C003A8687 /* SBJsonBase.m */,
+				1F64ED801293575C003A8687 /* SBJsonParser.h */,
+				1F64ED811293575C003A8687 /* SBJsonParser.m */,
+				1F64ED821293575C003A8687 /* SBJsonWriter.h */,
+				1F64ED831293575C003A8687 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		1F64EDBA12936581003A8687 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				1F64EDBE1293658E003A8687 /* Icon-72.png */,
+				1F64EDBF1293658E003A8687 /* Icon-Small-50.png */,
+				1F64EDC01293658E003A8687 /* Icon-Small.png */,
+				1F64EDC11293658E003A8687 /* Icon-Small@2x.png */,
+				1F64EDC21293658E003A8687 /* Icon.png */,
+				1F64EDC31293658E003A8687 /* Icon@2x.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* TEDxAlcatraz */ = {
+			isa = PBXGroup;
+			children = (
+				1F64ED761293575C003A8687 /* JSON */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				1F5548B812A4F5F60086DA4E /* Entitlements.plist */,
+			);
+			name = TEDxAlcatraz;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AB4B0D9B1048005BE974 /* TEDxAlcatraz_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F64EDBA12936581003A8687 /* icons */,
+				1F64ED6212935733003A8687 /* mapon.png */,
+				1F64ED6312935733003A8687 /* map.png */,
+				1F64ED6412935733003A8687 /* infomationon.png */,
+				1F64ED6512935733003A8687 /* information.png */,
+				1F64ED6612935733003A8687 /* schedule.png */,
+				1F64ED6712935733003A8687 /* scheduleon.png */,
+				1F64ED6812935733003A8687 /* speakers.png */,
+				1F64ED6912935733003A8687 /* speakerson.png */,
+				2840D7CD1179279E00D7F93C /* FirstView.xib */,
+				282CCBFD0DB6C98000C4EA27 /* SecondView.xib */,
+				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* TEDxAlcatraz-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				1F64ED8B1293576D003A8687 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TEDxAlcatraz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TEDxAlcatraz" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TEDxAlcatraz;
+			productName = TEDxAlcatraz;
+			productReference = 1D6058910D05DD3D006BFB54 /* TEDxAlcatraz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TEDxAlcatraz" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* TEDxAlcatraz */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TEDxAlcatraz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
+				282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */,
+				2840D7CE1179279E00D7F93C /* FirstView.xib in Resources */,
+				1F64ED5312935720003A8687 /* InformationController.xib in Resources */,
+				1F64ED5512935720003A8687 /* ScheduleController.xib in Resources */,
+				1F64ED5712935720003A8687 /* SpeakerDetailController.xib in Resources */,
+				1F64ED5A12935720003A8687 /* SpeakerViewController.xib in Resources */,
+				1F64ED5C12935720003A8687 /* MapController.xib in Resources */,
+				1F64ED6A12935733003A8687 /* mapon.png in Resources */,
+				1F64ED6B12935733003A8687 /* map.png in Resources */,
+				1F64ED6C12935733003A8687 /* infomationon.png in Resources */,
+				1F64ED6D12935733003A8687 /* information.png in Resources */,
+				1F64ED6E12935733003A8687 /* schedule.png in Resources */,
+				1F64ED6F12935733003A8687 /* scheduleon.png in Resources */,
+				1F64ED7012935733003A8687 /* speakers.png in Resources */,
+				1F64ED7112935733003A8687 /* speakerson.png in Resources */,
+				1F64EDC41293658E003A8687 /* Icon-72.png in Resources */,
+				1F64EDC51293658E003A8687 /* Icon-Small-50.png in Resources */,
+				1F64EDC61293658E003A8687 /* Icon-Small.png in Resources */,
+				1F64EDC71293658E003A8687 /* Icon-Small@2x.png in Resources */,
+				1F64EDC81293658E003A8687 /* Icon.png in Resources */,
+				1F64EDC91293658E003A8687 /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* TEDxAlcatrazAppDelegate.m in Sources */,
+				28216C970DB411BC00E5133A /* FirstViewController.m in Sources */,
+				1F64ED5212935720003A8687 /* InformationController.m in Sources */,
+				1F64ED5412935720003A8687 /* ScheduleController.m in Sources */,
+				1F64ED5612935720003A8687 /* SpeakerDetailController.m in Sources */,
+				1F64ED5812935720003A8687 /* SpeakersResultController.m in Sources */,
+				1F64ED5912935720003A8687 /* SpeakerViewController.m in Sources */,
+				1F64ED5B12935720003A8687 /* MapController.m in Sources */,
+				1F64ED841293575C003A8687 /* NSObject+SBJSON.m in Sources */,
+				1F64ED851293575C003A8687 /* NSString+SBJSON.m in Sources */,
+				1F64ED861293575C003A8687 /* SBJSON.m in Sources */,
+				1F64ED871293575C003A8687 /* SBJsonBase.m in Sources */,
+				1F64ED881293575C003A8687 /* SBJsonParser.m in Sources */,
+				1F64ED891293575C003A8687 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Documents/TEDxAlcatraz/Entitlements.plist";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TEDxAlcatraz_Prefix.pch;
+				INFOPLIST_FILE = "TEDxAlcatraz-Info.plist";
+				PRODUCT_NAME = TEDxAlcatraz;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Documents/TEDxAlcatraz/Entitlements.plist";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TEDxAlcatraz_Prefix.pch;
+				INFOPLIST_FILE = "TEDxAlcatraz-Info.plist";
+				PRODUCT_NAME = TEDxAlcatraz;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TEDxAlcatraz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TEDxAlcatraz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

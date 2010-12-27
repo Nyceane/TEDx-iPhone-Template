@@ -1,0 +1,1073 @@
+TTEDxAlcatraz
+v7
+r0
+t312800350.377819
+cCheck dependencies
+cProcessInfoPlistFile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/Info.plist TEDxAlcatraz-Info.plist
+cCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/MainWindow.xib
+cCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/SecondView.xib
+cCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/FirstView.xib
+cCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.xib
+cCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.xib
+cCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.xib
+cCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.xib
+cCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.xib
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/mapon.png mapon.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/map.png map.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/infomationon.png infomationon.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/information.png information.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/schedule.png schedule.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/scheduleon.png scheduleon.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/speakers.png speakers.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/speakerson.png speakerson.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-72.png Icon-72.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small-50.png Icon-Small-50.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small.png Icon-Small.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small@2x.png Icon-Small@2x.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon.png Icon.png
+cCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon@2x.png Icon@2x.png
+cProcessPCH /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch.gch TEDxAlcatraz_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/main.o /Users/nyceane/Documents/TEDxAlcatraz/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/TEDxAlcatrazAppDelegate.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/TEDxAlcatrazAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/FirstViewController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/InformationController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/ScheduleController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakerDetailController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakersResultController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakersResultController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakerViewController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/MapController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/NSObject+SBJSON.o /Users/nyceane/Documents/TEDxAlcatraz/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/NSString+SBJSON.o /Users/nyceane/Documents/TEDxAlcatraz/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJSON.o /Users/nyceane/Documents/TEDxAlcatraz/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonBase.o /Users/nyceane/Documents/TEDxAlcatraz/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonParser.o /Users/nyceane/Documents/TEDxAlcatraz/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonWriter.o /Users/nyceane/Documents/TEDxAlcatraz/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz normal i386
+cGenerateDSYMFile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app.dSYM /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz
+cTouch /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk
+c000000004C494D260000000000000110
+t1279872294
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BD1CD90000000000026F020
+t1272040848
+s2551840
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BD1FFC200000000002A96A0
+t1272053698
+s2791072
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BD1FF9E0000000000001355
+t1272053662
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h
+c000000004BD1D83E000000000000017D
+t1272043582
+s381
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004BD1D85F0000000000185260
+t1272043615
+s1593952
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004BD20412000000000000098F
+t1272054802
+s2447
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004BD20471000000000222E640
+t1272054897
+s35841600
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk
+c000000004C6C30170000000000000110
+t1282158615
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004C5A4DB60000000000295900
+t1280986550
+s2709760
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C5A4DB0000000000029D580
+t1280986544
+s2741632
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C5A4DA10000000000001466
+t1280986529
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h
+c000000004C6C301100000000000002FE
+t1282158609
+s766
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004C6C303B000000000016DD50
+t1282158651
+s1498448
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C6241ED00000000000009CD
+t1281507821
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C6242840000000001E228C0
+t1281507972
+s31598784
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/FirstViewController.h
+c000000004CE31F6300000000000000EB
+t1289953123
+s235
+i<UIKit/UIKit.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/FirstViewController.m
+c000000004CE31F6300000000000005B2
+t1289953123
+s1458
+i"FirstViewController.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.h
+c000000004C9682B300000000000001C0
+t1284932275
+s448
+i<UIKit/UIKit.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.m
+c000000004CE32225000000000000082E
+t1289953829
+s2094
+i"InformationController.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.xib
+c000000004C9683AA000000000000608A
+t1284932522
+s24714
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.h
+c000000004C968260000000000000023C
+t1284932192
+s572
+i<UIKit/UIKit.h>
+i<MapKit/MapKit.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.m
+c000000004CE321340000000000000AC0
+t1289953588
+s2752
+i"MapController.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.xib
+c000000004C96827A0000000000005D11
+t1284932218
+s23825
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.h
+c000000004C74DDE8000000000000013B
+t1282727400
+s315
+i<UIKit/UIKit.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.m
+c000000004CE3216100000000000006D6
+t1289953633
+s1750
+i"ScheduleController.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.xib
+c000000004CE335B90000000000005109
+t1289958841
+s20745
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.h
+c000000004C7055B700000000000001A5
+t1282430391
+s421
+i<UIKit/UIKit.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.m
+c000000004C95FE6200000000000005BF
+t1284898402
+s1471
+i"SpeakerDetailController.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.xib
+c000000004C952D930000000000004605
+t1284844947
+s17925
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.h
+c000000004C7033DA0000000000000148
+t1282421722
+s328
+i<UIKit/UIKit.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.m
+c000000004C703423000000000000073A
+t1282421795
+s1850
+i"SpeakerViewController.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.xib
+c000000004C952DC80000000000006E74
+t1284845000
+s28276
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakersResultController.h
+c000000004C703F6C000000000000012A
+t1282424684
+s298
+i<UIKit/UIKit.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakersResultController.m
+c000000004CE3215400000000000019FF
+t1289953620
+s6655
+i"SpeakersResultController.h"
+i"SpeakerDetailController.h"
+i"JSON.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/TEDxAlcatrazAppDelegate.h
+c000000004CE31F6300000000000001E4
+t1289953123
+s484
+i<UIKit/UIKit.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Classes/TEDxAlcatrazAppDelegate.m
+c000000004CE31F630000000000000C45
+t1289953123
+s3141
+i"TEDxAlcatrazAppDelegate.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/FirstView.xib
+c000000004CE31F6300000000000049D6
+t1289953123
+s18902
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Icon-72.png
+c000000004CE32D880000000000002103
+t1289956744
+s8451
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Icon-Small-50.png
+c000000004CE32DCF0000000000001DFE
+t1289956815
+s7678
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Icon-Small.png
+c000000004CE32DDE0000000000001A78
+t1289956830
+s6776
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Icon-Small@2x.png
+c000000004CE32D990000000000001EF0
+t1289956761
+s7920
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Icon.png
+c000000004CE32DB90000000000001F53
+t1289956793
+s8019
+
+N/Users/nyceane/Documents/TEDxAlcatraz/Icon@2x.png
+c000000004CE32D7600000000000028F9
+t1289956726
+s10489
+
+N/Users/nyceane/Documents/TEDxAlcatraz/JSON.h
+c000000004B93BE5E00000000000008F9
+t1267973726
+s2297
+i"SBJSON.h"
+i"NSObject+SBJSON.h"
+i"NSString+SBJSON.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/MainWindow.xib
+c000000004CE335A00000000000009096
+t1289958816
+s37014
+
+N/Users/nyceane/Documents/TEDxAlcatraz/NSObject+SBJSON.h
+c000000004B93BE5E0000000000000A01
+t1267973726
+s2561
+i<Foundation/Foundation.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/NSObject+SBJSON.m
+c000000004B93BE5E000000000000089E
+t1267973726
+s2206
+i"NSObject+SBJSON.h"
+i"SBJsonWriter.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/NSString+SBJSON.h
+c000000004B93BE5E0000000000000916
+t1267973726
+s2326
+i<Foundation/Foundation.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/NSString+SBJSON.m
+c000000004B93BE5E000000000000087D
+t1267973726
+s2173
+i"NSString+SBJSON.h"
+i"SBJsonParser.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/SBJSON.h
+c000000004B93BE5E0000000000000AED
+t1267973726
+s2797
+i<Foundation/Foundation.h>
+i"SBJsonParser.h"
+i"SBJsonWriter.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/SBJSON.m
+c000000004B93BE5E0000000000001ABC
+t1267973726
+s6844
+i"SBJSON.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/SBJsonBase.h
+c000000004B93BE5E0000000000000B82
+t1267973726
+s2946
+i<Foundation/Foundation.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/SBJsonBase.m
+c000000004B93BE5E0000000000000AC1
+t1267973726
+s2753
+i"SBJsonBase.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/SBJsonParser.h
+c000000004B93BE5E0000000000000C0B
+t1267973726
+s3083
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/SBJsonParser.m
+c000000004B93C6A300000000000036D0
+t1267975843
+s14032
+i"SBJsonParser.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/SBJsonWriter.h
+c000000004B93BE5E0000000000001140
+t1267973726
+s4416
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/SBJsonWriter.m
+c000000004B93BE5E0000000000001F26
+t1267973726
+s7974
+i"SBJsonWriter.h"
+
+N/Users/nyceane/Documents/TEDxAlcatraz/SecondView.xib
+c000000004CE31F6300000000000049D4
+t1289953123
+s18900
+
+N/Users/nyceane/Documents/TEDxAlcatraz/TEDxAlcatraz_Prefix.pch
+c000000004CE31F6300000000000000C1
+t1289953123
+s193
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app
+t1291107550
+s918
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app.dSYM
+t1289959574
+s102
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/FirstView.nib
+t1289959570
+s1707
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-72.png
+t1289957006
+s8451
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small-50.png
+t1289957006
+s7678
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small.png
+t1289957006
+s6776
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small@2x.png
+t1289957006
+s7920
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon.png
+t1289957006
+s8019
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon@2x.png
+t1289957006
+s10489
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/Info.plist
+t1291107550
+s738
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/InformationController.nib
+t1289959570
+s1416
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/MainWindow.nib
+t1289959570
+s2210
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/MapController.nib
+t1289959572
+s1541
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/PkgInfo
+t1291107550
+s8
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/ScheduleController.nib
+t1289959571
+s1187
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/SecondView.nib
+t1289959570
+s1706
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/SpeakerDetailController.nib
+t1289959571
+s951
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/SpeakerViewController.nib
+t1289959571
+s2113
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz
+t1289959574
+s83868
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/infomationon.png
+t1289953221
+s4689
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/information.png
+t1289953221
+s4541
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/map.png
+t1289953221
+s3254
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/mapon.png
+t1289953221
+s4684
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/schedule.png
+t1289953221
+s4061
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/scheduleon.png
+t1289953221
+s4654
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/speakers.png
+t1289953221
+s3818
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/speakerson.png
+t1289953221
+s4361
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/FirstViewController.o
+t1289959573
+s33720
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/InformationController.o
+t1289959573
+s42804
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/MapController.o
+t1289959573
+s50140
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/NSObject+SBJSON.o
+t1289959573
+s8272
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/NSString+SBJSON.o
+t1289959574
+s8192
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJSON.o
+t1289959574
+s20060
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonBase.o
+t1289959574
+s13192
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonParser.o
+t1289959574
+s35880
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonWriter.o
+t1289959574
+s25528
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/ScheduleController.o
+t1289959573
+s37712
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakerDetailController.o
+t1289959573
+s40236
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakerViewController.o
+t1289959573
+s39716
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakersResultController.o
+t1289959573
+s47528
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/TEDxAlcatraz.LinkFileList
+c000000004CE32012000000000000085D
+t1289953298
+s2141
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/TEDxAlcatrazAppDelegate.o
+t1289959573
+s49556
+
+N/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/main.o
+t1289959573
+s6300
+
+N/Users/nyceane/Documents/TEDxAlcatraz/infomationon.png
+c000000004C63B7610000000000001251
+t1281603425
+s4689
+
+N/Users/nyceane/Documents/TEDxAlcatraz/information.png
+c000000004C63B77700000000000011BD
+t1281603447
+s4541
+
+N/Users/nyceane/Documents/TEDxAlcatraz/main.m
+c000000004CE31F630000000000000166
+t1289953123
+s358
+i<UIKit/UIKit.h>
+
+N/Users/nyceane/Documents/TEDxAlcatraz/map.png
+c000000004C9559000000000000000CB6
+t1284856064
+s3254
+
+N/Users/nyceane/Documents/TEDxAlcatraz/mapon.png
+c000000004C955916000000000000124C
+t1284856086
+s4684
+
+N/Users/nyceane/Documents/TEDxAlcatraz/schedule.png
+c000000004C63B6400000000000000FDD
+t1281603136
+s4061
+
+N/Users/nyceane/Documents/TEDxAlcatraz/scheduleon.png
+c000000004C63B655000000000000122E
+t1281603157
+s4654
+
+N/Users/nyceane/Documents/TEDxAlcatraz/speakers.png
+c000000004C63B51A0000000000000EEA
+t1281602842
+s3818
+
+N/Users/nyceane/Documents/TEDxAlcatraz/speakerson.png
+c000000004C63B5D80000000000001109
+t1281603032
+s4361
+
+N/var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch.gch
+t1289959573
+s13825936
+
+N/var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-axpanyfhsjzsxlfqeobkhiddlaii/TEDxAlcatraz_Prefix.pch.gch
+t1289953221
+s15211536
+
+NTEDxAlcatraz-Info.plist
+c000000004CF4BCDD0000000000000431
+t1291107549
+s1073
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies312800350#312800350#0(0"0(0#1#0"27866456492998768#0"0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/FirstViewController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.609890
+e311652373.679245
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/FirstViewController.o
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/FirstViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/nyceane/Documents/TEDxAlcatraz/Classes/FirstViewController.m311652373#311652373#0(0"0(0#0#67"/Users/nyceane/Documents/TEDxAlcatraz/Classes/FirstViewController.m8610895680#2082"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/Classes/FirstViewController.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/FirstViewController.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/InformationController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.633552
+e311652373.743464
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/InformationController.o
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.m311652373#311652373#0(0"0(0#0#69"/Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.m8610317728#2086"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/InformationController.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/MapController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.859110
+e311652373.958108
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/MapController.o
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.m311652373#311652373#0(0"0(0#0#61"/Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.m8608420736#2070"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/MapController.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/NSObject+SBJSON.o /Users/nyceane/Documents/TEDxAlcatraz/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.913884
+e311652373.984250
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/NSObject+SBJSON.o
+x/Users/nyceane/Documents/TEDxAlcatraz/NSObject+SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/nyceane/Documents/TEDxAlcatraz/NSObject+SBJSON.m311652373#311652373#0(0"0(0#0#55"/Users/nyceane/Documents/TEDxAlcatraz/NSObject+SBJSON.m8601457312#2066"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/NSObject+SBJSON.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/NSObject+SBJSON.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/NSString+SBJSON.o /Users/nyceane/Documents/TEDxAlcatraz/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.958219
+e311652374.024653
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/NSString+SBJSON.o
+x/Users/nyceane/Documents/TEDxAlcatraz/NSString+SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/nyceane/Documents/TEDxAlcatraz/NSString+SBJSON.m311652373#311652374#0(0"0(0#0#55"/Users/nyceane/Documents/TEDxAlcatraz/NSString+SBJSON.m8612052032#2066"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/NSString+SBJSON.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/NSString+SBJSON.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJSON.o /Users/nyceane/Documents/TEDxAlcatraz/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.984620
+e311652374.074232
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJSON.o
+x/Users/nyceane/Documents/TEDxAlcatraz/SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@54"Compile /Users/nyceane/Documents/TEDxAlcatraz/SBJSON.m311652373#311652374#0(0"0(0#0#46"/Users/nyceane/Documents/TEDxAlcatraz/SBJSON.m8610746112#2048"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/SBJSON.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJSON.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonBase.o /Users/nyceane/Documents/TEDxAlcatraz/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652374.024759
+e311652374.097540
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonBase.o
+x/Users/nyceane/Documents/TEDxAlcatraz/SBJsonBase.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/nyceane/Documents/TEDxAlcatraz/SBJsonBase.m311652374#311652374#0(0"0(0#0#50"/Users/nyceane/Documents/TEDxAlcatraz/SBJsonBase.m8610544704#2056"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/SBJsonBase.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonBase.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonParser.o /Users/nyceane/Documents/TEDxAlcatraz/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652374.074353
+e311652374.203449
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonParser.o
+x/Users/nyceane/Documents/TEDxAlcatraz/SBJsonParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/nyceane/Documents/TEDxAlcatraz/SBJsonParser.m311652374#311652374#0(0"0(0#0#52"/Users/nyceane/Documents/TEDxAlcatraz/SBJsonParser.m8610241952#2060"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/SBJsonParser.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonParser.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonWriter.o /Users/nyceane/Documents/TEDxAlcatraz/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652374.097646
+e311652374.191251
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonWriter.o
+x/Users/nyceane/Documents/TEDxAlcatraz/SBJsonWriter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/nyceane/Documents/TEDxAlcatraz/SBJsonWriter.m311652374#311652374#0(0"0(0#0#52"/Users/nyceane/Documents/TEDxAlcatraz/SBJsonWriter.m8608722752#2060"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/SBJsonWriter.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SBJsonWriter.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/ScheduleController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.679355
+e311652373.759254
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/ScheduleController.o
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.m311652373#311652373#0(0"0(0#0#66"/Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.m8608097536#2080"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/ScheduleController.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakerDetailController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.743578
+e311652373.838160
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakerDetailController.o
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.m311652373#311652373#0(0"0(0#0#71"/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.m8607562464#2090"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakerDetailController.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakerViewController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.838266
+e311652373.913770
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakerViewController.o
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.m311652373#311652373#0(0"0(0#0#69"/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.m8612699744#2086"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakerViewController.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakersResultController.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakersResultController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.759363
+e311652373.858992
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakersResultController.o
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakersResultController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakersResultController.m311652373#311652373#0(0"0(0#0#72"/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakersResultController.m8605782528#2092"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakersResultController.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/SpeakersResultController.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/TEDxAlcatrazAppDelegate.o /Users/nyceane/Documents/TEDxAlcatraz/Classes/TEDxAlcatrazAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.547774
+e311652373.633352
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/TEDxAlcatrazAppDelegate.o
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/TEDxAlcatrazAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/nyceane/Documents/TEDxAlcatraz/Classes/TEDxAlcatrazAppDelegate.m311652373#311652373#0(0"0(0#0#71"/Users/nyceane/Documents/TEDxAlcatraz/Classes/TEDxAlcatrazAppDelegate.m8612681888#2090"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/Classes/TEDxAlcatrazAppDelegate.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/TEDxAlcatrazAppDelegate.o0#
+
+CCompileC build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/main.o /Users/nyceane/Documents/TEDxAlcatraz/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652373.542455
+e311652373.609779
+r1
+xCompileC
+xbuild/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/main.o
+x/Users/nyceane/Documents/TEDxAlcatraz/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@52"Compile /Users/nyceane/Documents/TEDxAlcatraz/main.m311652373#311652373#0(0"0(0#0#44"/Users/nyceane/Documents/TEDxAlcatraz/main.m8613129184#2044"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -include /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch -c /Users/nyceane/Documents/TEDxAlcatraz/main.m -o /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.xib
+s311652370.381750
+e311652370.868812
+r1
+xCompileXIB
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.xib
+lSLF07#2@44"CompileXIB Classes/InformationController.xib311652370#311652370#0(0"0(0#0#71"/Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.xib8613416992#602"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/InformationController.nib /Users/nyceane/Documents/TEDxAlcatraz/Classes/InformationController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.xib
+s311652371.368512
+e311652372.090570
+r1
+xCompileXIB
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.xib
+lSLF07#2@36"CompileXIB Classes/MapController.xib311652371#311652372#0(0"0(0#0#63"/Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.xib8607582176#586"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/MapController.nib /Users/nyceane/Documents/TEDxAlcatraz/Classes/MapController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.xib
+s311652370.838023
+e311652371.368417
+r1
+xCompileXIB
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.xib
+lSLF07#2@41"CompileXIB Classes/ScheduleController.xib311652370#311652371#0(0"0(0#0#68"/Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.xib8612087552#596"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/ScheduleController.nib /Users/nyceane/Documents/TEDxAlcatraz/Classes/ScheduleController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.xib
+s311652370.868906
+e311652371.363574
+r1
+xCompileXIB
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.xib
+lSLF07#2@46"CompileXIB Classes/SpeakerDetailController.xib311652370#311652371#0(0"0(0#0#73"/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.xib8610271808#606"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/SpeakerDetailController.nib /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerDetailController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.xib
+s311652371.363767
+e311652371.847994
+r1
+xCompileXIB
+x/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.xib
+lSLF07#2@44"CompileXIB Classes/SpeakerViewController.xib311652371#311652371#0(0"0(0#0#71"/Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.xib8607729888#602"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/SpeakerViewController.nib /Users/nyceane/Documents/TEDxAlcatraz/Classes/SpeakerViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/FirstView.xib
+s311652370.353216
+e311652370.837933
+r1
+xCompileXIB
+x/Users/nyceane/Documents/TEDxAlcatraz/FirstView.xib
+lSLF07#2@24"CompileXIB FirstView.xib311652370#311652370#0(0"0(0#0#51"/Users/nyceane/Documents/TEDxAlcatraz/FirstView.xib8614870912#570"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/FirstView.nib /Users/nyceane/Documents/TEDxAlcatraz/FirstView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/MainWindow.xib
+s311652369.717088
+e311652370.381658
+r1
+xCompileXIB
+x/Users/nyceane/Documents/TEDxAlcatraz/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib311652369#311652370#0(0"0(0#0#52"/Users/nyceane/Documents/TEDxAlcatraz/MainWindow.xib8613145920#572"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/MainWindow.nib /Users/nyceane/Documents/TEDxAlcatraz/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/nyceane/Documents/TEDxAlcatraz/SecondView.xib
+s311652369.717825
+e311652370.353125
+r1
+xCompileXIB
+x/Users/nyceane/Documents/TEDxAlcatraz/SecondView.xib
+lSLF07#2@25"CompileXIB SecondView.xib311652369#311652370#0(0"0(0#0#52"/Users/nyceane/Documents/TEDxAlcatraz/SecondView.xib8612945152#572"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/SecondView.nib /Users/nyceane/Documents/TEDxAlcatraz/SecondView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-72.png Icon-72.png
+s311649806.200378
+e311649806.225345
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-72.png
+xIcon-72.png
+lSLF07#2@16"Copy Icon-72.png311649806#311649806#0(0"0(0#0#49"/Users/nyceane/Documents/TEDxAlcatraz/Icon-72.png8607264320#457"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/Icon-72.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small-50.png Icon-Small-50.png
+s311649806.205078
+e311649806.225494
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small-50.png
+xIcon-Small-50.png
+lSLF07#2@22"Copy Icon-Small-50.png311649806#311649806#0(0"0(0#0#55"/Users/nyceane/Documents/TEDxAlcatraz/Icon-Small-50.png8613381056#463"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/Icon-Small-50.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small.png Icon-Small.png
+s311649806.211189
+e311649806.225622
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small.png
+xIcon-Small.png
+lSLF07#2@19"Copy Icon-Small.png311649806#311649806#0(0"0(0#0#52"/Users/nyceane/Documents/TEDxAlcatraz/Icon-Small.png8613129184#460"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/Icon-Small.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small@2x.png Icon-Small@2x.png
+s311649806.211990
+e311649806.225749
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/Icon-Small@2x.png
+xIcon-Small@2x.png
+lSLF07#2@22"Copy Icon-Small@2x.png311649806#311649806#0(0"0(0#0#55"/Users/nyceane/Documents/TEDxAlcatraz/Icon-Small@2x.png8610800672#463"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/Icon-Small@2x.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon.png Icon.png
+s311649806.212618
+e311649806.225875
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/Icon.png
+xIcon.png
+lSLF07#2@13"Copy Icon.png311649806#311649806#0(0"0(0#0#46"/Users/nyceane/Documents/TEDxAlcatraz/Icon.png8610049632#454"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/Icon.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/Icon@2x.png Icon@2x.png
+s311649806.213222
+e311649806.225997
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/Icon@2x.png
+xIcon@2x.png
+lSLF07#2@16"Copy Icon@2x.png311649806#311649806#0(0"0(0#0#49"/Users/nyceane/Documents/TEDxAlcatraz/Icon@2x.png8607449120#457"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/Icon@2x.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/infomationon.png infomationon.png
+s311646021.116332
+e311646021.155474
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/infomationon.png
+xinfomationon.png
+lSLF07#2@21"Copy infomationon.png311646021#311646021#0(0"0(0#0#54"/Users/nyceane/Documents/TEDxAlcatraz/infomationon.png8606408544#462"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/infomationon.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/information.png information.png
+s311646021.116923
+e311646021.151060
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/information.png
+xinformation.png
+lSLF07#2@20"Copy information.png311646021#311646021#0(0"0(0#0#53"/Users/nyceane/Documents/TEDxAlcatraz/information.png8606074304#461"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/information.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/map.png map.png
+s311646021.115704
+e311646021.142142
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/map.png
+xmap.png
+lSLF07#2@12"Copy map.png311646021#311646021#0(0"0(0#0#45"/Users/nyceane/Documents/TEDxAlcatraz/map.png8606580256#453"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/map.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/mapon.png mapon.png
+s311646021.114699
+e311646021.145880
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/mapon.png
+xmapon.png
+lSLF07#2@14"Copy mapon.png311646021#311646021#0(0"0(0#0#47"/Users/nyceane/Documents/TEDxAlcatraz/mapon.png8607020512#455"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/mapon.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/schedule.png schedule.png
+s311646021.117505
+e311646021.150292
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/schedule.png
+xschedule.png
+lSLF07#2@17"Copy schedule.png311646021#311646021#0(0"0(0#0#50"/Users/nyceane/Documents/TEDxAlcatraz/schedule.png8604496992#458"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/schedule.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/scheduleon.png scheduleon.png
+s311646021.118085
+e311646021.151728
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/scheduleon.png
+xscheduleon.png
+lSLF07#2@19"Copy scheduleon.png311646021#311646021#0(0"0(0#0#52"/Users/nyceane/Documents/TEDxAlcatraz/scheduleon.png8610576704#460"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/scheduleon.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/speakers.png speakers.png
+s311646021.119893
+e311646021.141938
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/speakers.png
+xspeakers.png
+lSLF07#2@17"Copy speakers.png311646021#311646021#0(0"0(0#0#50"/Users/nyceane/Documents/TEDxAlcatraz/speakers.png8610439488#458"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/speakers.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CCpResource build/Debug-iphonesimulator/TEDxAlcatraz.app/speakerson.png speakerson.png
+s311646021.121472
+e311646021.147822
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/TEDxAlcatraz.app/speakerson.png
+xspeakerson.png
+lSLF07#2@19"Copy speakerson.png311646021#311646021#0(0"0(0#0#52"/Users/nyceane/Documents/TEDxAlcatraz/speakerson.png8610155360#460"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nyceane/Documents/TEDxAlcatraz/speakerson.png /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
+CGenerateDSYMFile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app.dSYM /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz
+s311652374.321219
+e311652374.386984
+r1
+xGenerateDSYMFile
+x/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app.dSYM
+x/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz
+lSLF07#2@124"GenerateDSYMFile build/Debug-iphonesimulator/TEDxAlcatraz.app.dSYM build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz311652374#311652374#0(0"0(0#0#95"/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz8607592224#395"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz -o /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app.dSYM0#
+
+CLd /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz normal i386
+s311652374.203551
+e311652374.321120
+r1
+xLd
+x/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz
+xnormal
+xi386
+lSLF07#2@100"Link /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz311652374#311652374#0(0"0(0#0#0"8608532544#938"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -L/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -filelist /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/Objects-normal/i386/TEDxAlcatraz.LinkFileList -mmacosx-version-min=10.5 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework MapKit -o /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/TEDxAlcatraz0#
+
+CProcessInfoPlistFile /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/Info.plist TEDxAlcatraz-Info.plist
+s312800350.214620
+e312800350.370606
+r1
+xProcessInfoPlistFile
+x/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/Info.plist
+xTEDxAlcatraz-Info.plist
+lSLF07#2@31"Process TEDxAlcatraz-Info.plist312800350#312800350#0(0"0(0#0#61"/Users/nyceane/Documents/TEDxAlcatraz/TEDxAlcatraz-Info.plist30962724186357872#491"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility TEDxAlcatraz-Info.plist -genpkginfo /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app/Info.plist0#
+
+CProcessPCH /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch.gch TEDxAlcatraz_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s311652372.090690
+e311652373.542233
+r1
+xProcessPCH
+x/var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch.gch
+xTEDxAlcatraz_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile TEDxAlcatraz_Prefix.pch311652372#311652373#0(0"0(0#0#61"/Users/nyceane/Documents/TEDxAlcatraz/TEDxAlcatraz_Prefix.pch8603789184#1932"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -c /Users/nyceane/Documents/TEDxAlcatraz/TEDxAlcatraz_Prefix.pch -o /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-afcolizzmcmvxxdisdbqukujyptg/TEDxAlcatraz_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-axpanyfhsjzsxlfqeobkhiddlaii/TEDxAlcatraz_Prefix.pch.gch TEDxAlcatraz_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s311646021.186367
+e311646021.968673
+r1
+xProcessPCH
+x/var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-axpanyfhsjzsxlfqeobkhiddlaii/TEDxAlcatraz_Prefix.pch.gch
+xTEDxAlcatraz_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile TEDxAlcatraz_Prefix.pch311646021#311646021#0(0"0(0#0#61"/Users/nyceane/Documents/TEDxAlcatraz/TEDxAlcatraz_Prefix.pch8608489088#1891"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-generated-files.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-own-target-headers.hmap -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-all-target-headers.hmap -iquote /Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/TEDxAlcatraz-project-headers.hmap -F/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator -I/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/include -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources/i386 -I/Users/nyceane/Documents/TEDxAlcatraz/build/TEDxAlcatraz.build/Debug-iphonesimulator/TEDxAlcatraz.build/DerivedSources -c /Users/nyceane/Documents/TEDxAlcatraz/TEDxAlcatraz_Prefix.pch -o /var/folders/x9/x97H4RtSF3udyBvmztJQWU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TEDxAlcatraz_Prefix-axpanyfhsjzsxlfqeobkhiddlaii/TEDxAlcatraz_Prefix.pch.gch0#
+
+CTouch /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app
+s312800350.373457
+e312800350.377761
+r1
+xTouch
+x/Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app
+lSLF07#2@88"Touch /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app312800350#312800350#0(0"0(0#0#0"8601343424#281"    cd /Users/nyceane/Documents/TEDxAlcatraz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/nyceane/Documents/TEDxAlcatraz/build/Debug-iphonesimulator/TEDxAlcatraz.app0#
+
