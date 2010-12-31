@@ -10,7 +10,9 @@
 
 
 @interface SpeakerViewController : UIViewController <UINavigationControllerDelegate> {
-	IBOutlet UINavigationController *navigationController;
+	UINavigationController *navigationController;
 }
+
+@property (readonly, retain, nonatomic) IBOutlet UINavigationController* navigationController;
 
 @end

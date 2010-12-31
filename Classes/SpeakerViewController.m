@@ -8,8 +8,14 @@
 
 #import "SpeakerViewController.h"
 
+@interface  SpeakerViewController (InternalMethods)
+@property (retain, nonatomic) IBOutlet UINavigationController* navigationController;
+@end
+
 
 @implementation SpeakerViewController
+
+@synthesize navigationController;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -29,7 +35,7 @@
 	[self.view addSubview:navigationController.view];
 }
 
-
+/*
 - (void)navigationController:(UINavigationController *)navigationController 
 	   didShowViewController:(UIViewController *)viewController 
 					animated:(BOOL)animated
@@ -43,6 +49,7 @@
 {
 	
 }
+*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -50,7 +57,6 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-*/
 
 
 - (void)didReceiveMemoryWarning {
@@ -59,15 +65,21 @@
     
     // Release any cached data, images, etc that aren't in use.
 }
+ */
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+	
+	self.navigationController = nil;
+	
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
 
 
 - (void)dealloc {
+	[navigationController release]; 	
+	
     [super dealloc];
 }
 

@@ -14,7 +14,7 @@
 	UIWebView *webView;
 }
 
-@property (readwrite, retain) NSDictionary *speakerDictionary;
-@property (nonatomic, retain) IBOutlet UIWebView *webView;
+@property (readwrite, retain, nonatomic) NSDictionary *speakerDictionary;
+@property (readonly, retain, nonatomic) IBOutlet UIWebView *webView;
 
 @end

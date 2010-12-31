@@ -8,6 +8,9 @@
 
 #import "SpeakerDetailController.h"
 
+@interface SpeakerDetailController (InternalMethods)
+@property (retain, nonatomic) IBOutlet UIWebView *webView;
+@end
 
 @implementation SpeakerDetailController
 
@@ -33,26 +36,31 @@
 	
 	NSURLRequest *requestObj = [ NSURLRequest requestWithURL: url ];
 		
-	[ webView loadRequest: requestObj ];
+	[webView loadRequest:requestObj];
 }
 
+/*
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
 }
+*/
 
 - (void)viewDidUnload {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+	
+	self.webView = nil;
 }
 
 
 - (void)dealloc {
 	[speakerDictionary release];
 	[webView release];
+	
     [super dealloc];
 }
 

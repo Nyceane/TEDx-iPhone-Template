@@ -19,7 +19,9 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
+	// a black status bar better fits the design of the app
+    [application setStatusBarStyle:UIStatusBarStyleBlackOpaque];
+	
     // Override point for customization after application launch.
 
     // Add the tab bar controller's view to the window and display.
