@@ -4,9 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>FirstView.nib</key>
+		<key>Entitlements.plist</key>
 		<data>
-		Np/IP0PNkoUlvARGBKfNXAYMyHA=
+		TAQG+WMSfAw10woxZXtOe1+pYbY=
 		</data>
 		<key>Icon-72.png</key>
 		<data>
@@ -34,15 +34,15 @@
 		</data>
 		<key>InformationController.nib</key>
 		<data>
-		mV3h7++wsOHEQsAp+KYcgDFxEkA=
+		5gHje/9+hJ9pIagt1v/L7uONAlw=
 		</data>
 		<key>MainWindow.nib</key>
 		<data>
-		DyhcWQbUJ+9cvV+xRbi6XNYIljI=
+		mM3XXLSH+MsJhfaOpwZD4Jv5izI=
 		</data>
 		<key>MapController.nib</key>
 		<data>
-		m5AX8cClgZZnchl+u0NNX2SqPcU=
+		Vmldo7B7NlOMzZFsEt+ILupufs4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -50,23 +50,19 @@
 		</data>
 		<key>ScheduleController.nib</key>
 		<data>
-		qFxjA0I111ID/e9Y6YGCF7XJ1YI=
-		</data>
-		<key>SecondView.nib</key>
-		<data>
-		xh8wadiAyNaiOudmGRPV02ZdMfM=
+		Eq1VB5Sxu8hFCfeVICuOejoQZbw=
 		</data>
 		<key>SpeakerDetailController.nib</key>
 		<data>
-		sXOFxxtsEU7BWIyHO/VqFp3LQkw=
+		4sH7yE5VtPAq8WArmqvw4sJ5FGs=
 		</data>
 		<key>SpeakerViewController.nib</key>
 		<data>
-		YNUqWiTMOhrLHHf9qF0JhH0qmMc=
+		KMptVBoGqKokDBmzIB06KP8wxBo=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		MdxfL2/hzAWqBBz0ZOGWtFWAH3E=
+		k6ICuR1Gvcgl7WrKA5qtWx9Tjy0=
 		</data>
 		<key>infomationon.png</key>
 		<data>

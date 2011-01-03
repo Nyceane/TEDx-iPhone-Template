@@ -2,13 +2,14 @@
 //  SpeakersResultController.m
 //  TEDxTransmedia
 //
-//  Created by Nyceane on 8/12/10.
+//  Created by Nyceane on 8/12/10. Updated by Michael May.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import "TEDxAlcatrazAppDelegate.h"
 
 #import "SpeakersResultController.h"
+#import "SpeakersResultTableViewCell.h"
 #import "SpeakerDetailController.h"
 #import "JSON.h"
 
@@ -19,12 +20,13 @@
 
 #pragma mark -
 
-#define kImageFileNameFormat @"%@.dat"
+#define kImageFileNameFormat @"%d.dat"
+#define kImageCacheDirectoryName @"imagecache"
 
 -(void)createTempPath {
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
 	NSString *documentsDirectory = [paths objectAtIndex:0];
-	NSString *tempPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"imagecache"]];
+	NSString *tempPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:kImageCacheDirectoryName]];
 	
 	if([[NSFileManager defaultManager] fileExistsAtPath:tempPath] == NO) {
 		NSError *error;
@@ -34,40 +36,41 @@
 	}
 }
 
--(NSString*)tempPathForIndexPath:(NSIndexPath*)indexPath {
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+-(NSString*)tempPathForSpeakerImage:(NSDictionary*)speaker {
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
 	NSString *documentsDirectory = [paths objectAtIndex:0];
-	NSString *tempPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"imagecache"]];
+	NSString *tempPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:kImageCacheDirectoryName]];
 	
-	tempPath = [tempPath stringByAppendingPathComponent:[NSString stringWithFormat:kImageFileNameFormat, [indexPath section], [indexPath row]]];
+	tempPath = [tempPath stringByAppendingPathComponent:[NSString stringWithFormat:kImageFileNameFormat, [TEDxAlcatrazGlobal speakerIdFromJSONData:speaker]]];
 	
 	return tempPath;
 }
 
+-(UIImage*)imageForSpeaker:(NSDictionary*)speaker {
+	NSString* path = [self tempPathForSpeakerImage:speaker];
+	UIImage *image = nil;
+	
+	if([[NSFileManager defaultManager] fileExistsAtPath:path] == YES) {		
+		image = [[UIImage alloc] initWithContentsOfFile:path];
+		
+		DLog(@"Found image for speaker:Path:%@ (Image:%@)", path, image);
+	}
+	
+	return image;
+}
+
+-(void)setImage:(UIImage*)image forSpeaker:(NSDictionary*)speaker {
+	NSString* path = [self tempPathForSpeakerImage:speaker];
+
+	BOOL success = [[NSFileManager defaultManager] createFileAtPath:path 
+															contents:UIImagePNGRepresentation(image)
+														  attributes:nil];
+	
+	DLog(@"Set Image:Path:%@ Success:%d", path, success);
+}
+
 #pragma mark -
 #pragma mark getting data
-
-/*
-- (NSArray *)getSpeakers:(NSUInteger)page 
-			 eventId:(NSUInteger)EventId
-{	
-	NSString *requestString = [NSString stringWithFormat:
-							   @"http://www.paschar.com/wsdl/TEDxService.svc/GetSpeakersByEventId?eventid=%i&page=%i",
-							   EventId,
-							   page];
-	//NSLog(@"%@", requestString);
-	
-	NSURLRequest *newUserURLRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:requestString]];
-	
-	//Data returned by Web Service
-	NSData *returnData = [NSURLConnection sendSynchronousRequest:newUserURLRequest returningResponse:nil error:nil];
-	NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
-	
-	NSArray *responseArray = [returnString JSONValue];
-	
-	return responseArray;
-}
-*/
 
 -(void)getSpeakersInBackground {	
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
@@ -77,18 +80,23 @@
 							   kEventId,
 							   kPages];
 	
-	//NSLog(@"%@", requestString);
-	
 	NSURLRequest *newUserURLRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:requestString]];
 	
 	//Data returned by Web Service
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 	NSData *returnData = [NSURLConnection sendSynchronousRequest:newUserURLRequest returningResponse:nil error:nil];
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+	
 	NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
+	
+	DLog(@"Speakers:%@", returnString);
 	
 	[speakers release];
 	speakers = [[returnString JSONValue] retain];
 	
 	[[self tableView] performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+	
+	[returnString release];
 	
 	[pool drain];
 }
@@ -100,62 +108,49 @@
 		
 		NSDictionary *speaker = [speakers objectAtIndex:[indexPath row]];
 		
-		DLog(@"Getting data for %@", indexPath);		
+		[self createTempPath];
 		
-		NSData *receivedData =  [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:[speaker objectForKey:@"PhotoURL"]]];
-				
-		UITableViewCell *cell = [[self tableView] cellForRowAtIndexPath:indexPath];
+		UIImage* image = [[self imageForSpeaker:speaker] retain];
+		
+		if(image == nil) {
+			DLog(@"Getting data for %@ (speaker:%d)", indexPath, [TEDxAlcatrazGlobal speakerIdFromJSONData:speaker]);		
+			
+			[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];		
+			
+			NSData *receivedData =  [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:[TEDxAlcatrazGlobal photoURLFromJSONData:speaker]]];
+			
+			[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+			
+			image = [[UIImage alloc] initWithData:receivedData];
+			
+			[receivedData release];
+			
+			[self setImage:image forSpeaker:speaker];
+		}
+		
+		UITableViewCell *cell = nil;
+		@try {
+			cell = [[self tableView] cellForRowAtIndexPath:indexPath];
+		}
+		@catch (NSException * e) {
+			cell = nil;
+		}
 		
 		if(cell) {
-			DLog(@"Setting Image (%@) for IndexPath:%@", [cell imageView], indexPath);
+			DLog(@"Setting Image (%@) for Cell with IndexPath:%@", [cell imageView], indexPath);
 			
-			UIImage *image = [[UIImage alloc] initWithData:receivedData];
-
 			[[cell imageView] performSelectorOnMainThread:@selector(setImage:) withObject:image waitUntilDone:YES];
-			
+			[[cell imageView] setFrame:CGRectMake(0, 0, 70, 70)];
 			[cell setNeedsLayout];
 			
 			DLog(@"Set image:%@", [cell imageView]);
-			
-			[image release];
 		}
 		
-		[receivedData release];
-		
+		[image release];
+				
 		[pool drain];
 	}
 }
-
-#pragma mark -
-
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-*/
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}
-*/
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
 
 #pragma mark -
 #pragma mark Table view data source
@@ -165,60 +160,36 @@
     return 1;
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-	//NSLog(@"%@", [[speakers objectAtIndex:section] objectForKey:@"speakers"]);
     return [speakers count];
 }
 
-
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"TEDxSpeakerCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[SpeakersResultTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
 	
 	// Configure the cell...
 	NSDictionary *speaker = [speakers objectAtIndex:[indexPath row]];
 	
-	//int gameTypeId = [[game objectForKey:@"GameTypeId"] intValue];
+	UIImage* image = [[self imageForSpeaker:speaker] retain];
+	cell.imageView.image = image;	
 	
-	cell.imageView.image = nil;	
-	
-	[self performSelectorInBackground:@selector(getImageInBackgroundForIndexPath:) withObject:indexPath];
-	
-	/*
-	//Get Game Image
-	NSData *receivedData =  [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:[speaker objectForKey:@"PhotoURL"]]];
-	
-	cell.imageView.image = [[UIImage alloc] initWithData:receivedData];
-	*/
-	cell.imageView.image = nil;
-	
-	
-	//get the speaker name
-	NSString *Name = [NSString stringWithFormat:
-						@"%@ %@",
-						[speaker objectForKey:@"FirstName"],
-						[speaker objectForKey:@"LastName"]];
-	cell.textLabel.text = Name;
-	
-	//SubTitle
-	cell.detailTextLabel.text = [speaker objectForKey:@"Title"];
-	
+	cell.textLabel.text = [TEDxAlcatrazGlobal nameStringFromJSONData:speaker];		// speakers name
+	cell.detailTextLabel.text = [TEDxAlcatrazGlobal titleFromJSONData:speaker];		// speakers profession
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
-    // Configure the cell...
-    	
+	if(image == nil) {
+		[self performSelectorInBackground:@selector(getImageInBackgroundForIndexPath:) withObject:indexPath];
+	}
+	
     return cell;
 }
-
-
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -226,100 +197,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-	//newGameButton = [[UIBarButtonItem alloc] initWithTitle:@"New Game" style:UIBarButtonItemStylePlain target:self action:nil];
-	//myGameButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:nil];
-	
-	//self.navigationItem.leftBarButtonItem = myGameButton;
-	//self.navigationItem.rightBarButtonItem = newGameButton;
-	//tabBarController = self.tabBarController;
-	
 	self.navigationItem.title = @"Speakers";
 	
-	//speakers = [[self getSpeakers:1 eventId:13] retain];
+	self.tableView.rowHeight = kSpeakersTableRowHeight;
 	
 	[self performSelectorInBackground:@selector(getSpeakersInBackground) withObject:nil];
 }
-
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-
-#pragma mark -
-#pragma mark Table view delegate
 
 #pragma mark -
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
+	NSDictionary *speaker = [speakers objectAtIndex:[indexPath row]];
 	
-	NSDictionary *speaker = [speakers objectAtIndex:[indexPath indexAtPosition:1]];
+	if(speaker) {
+		SpeakerDetailController *speakerDetailController = [[SpeakerDetailController alloc] initWithSpeaker:speaker];
+		[self.navigationController pushViewController:speakerDetailController animated:YES];
+		[speakerDetailController release];
+	}
 	
-	SpeakerDetailController *speakerDetailController = [[SpeakerDetailController alloc] initWithNibName:@"SpeakerDetailController" bundle:nil];
-	speakerDetailController.speakerDictionary = speaker;
-	
-	[self.navigationController pushViewController:speakerDetailController animated:YES];
-	[speakerDetailController release];
-	
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-
 
 #pragma mark -
 #pragma mark Memory management
 
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Relinquish ownership any cached data, images, etc that aren't in use.
-}
-
 - (void)viewDidUnload {
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
+	
+	[speakers release], speakers = nil;
 }
 
 
 - (void)dealloc {
+	[speakers release];
+	
     [super dealloc];
 }
 

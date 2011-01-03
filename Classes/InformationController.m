@@ -2,79 +2,40 @@
 //  InformationController.m
 //  TEDxTransmedia
 //
-//  Created by Nyceane on 8/12/10.
+//  Created by Nyceane on 8/12/10. Updated by Michael May.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import "InformationController.h"
+#import "TEDxAlcatrazGlobal.h"
 
+#define kTEDxInformationURL @"http://www.tedxapps.com/mobile/about/?EventId=13"
+#define kTEDxMailToURL @"mailto:TEDxAlcatraz@gmail.com?subject=iPhone%20TEDxAlcatraz%20Question&body=Hello%20"
 
 @implementation InformationController
-@synthesize webView, btnContact;
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
+@synthesize btnContact;
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-- (void)viewDidLoad {
-	//Load up the page
-	NSString *urlAddress = @"http://www.tedxapps.com/mobile/about/?EventId=13";
-	NSURL *url = [ NSURL URLWithString: urlAddress ];
-	NSURLRequest *requestObj = [ NSURLRequest requestWithURL: url ];
-	webView.scalesPageToFit = YES;
-	[ webView loadRequest: requestObj ];
-
+- (void)viewDidLoad  {
+	[super loadURLString:kTEDxInformationURL];
 }
 
--(IBAction)btnEmail_Clicked
-{
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:TEDxAlcatraz@gmail.com?subject=iPhone%20TEDxAlcatraz%20Question&body=Hello%20"]];
-
+-(IBAction)btnEmail_Clicked {
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:kTEDxMailToURL]];
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-	NSLog(@"webViewDidFinishLoad");
-}
-
-
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
+#pragma mark -
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+	
+	self.btnContact = nil;
 }
-
 
 - (void)dealloc {
-	[webView release];
+	[btnContact release];
+	
     [super dealloc];
 }
-
 
 @end

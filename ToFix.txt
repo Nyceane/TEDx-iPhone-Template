@@ -1,0 +1,3 @@
+The table view for the Speakers is being cropped at the bottom. I think this is because the xib for the page is a bit confused with a view that has a navigation controller added to it. This probably needs reworking to allow the table to autoresize itself correctly.
+
+We should probably internationalise the app and get all the text strings into a localized file for future proofing.

@@ -2,64 +2,47 @@
 //  SpeakerDetailController.m
 //  TEDxTransmedia
 //
-//  Created by Nyceane on 8/21/10.
+//  Created by Nyceane on 8/21/10. Updated by Michael May.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import "SpeakerDetailController.h"
-
-@interface SpeakerDetailController (InternalMethods)
-@property (retain, nonatomic) IBOutlet UIWebView *webView;
-@end
+#import "TEDxAlcatrazGlobal.h"
 
 @implementation SpeakerDetailController
 
-@synthesize speakerDictionary, webView;
+#pragma mark -
+
+-(id)initWithSpeaker:(NSDictionary*)speakerJSONDictionary {
+	self = [super initWithNibName:@"SpeakerDetailController" bundle:nil];
+	
+	if(self) {
+		speakerDictionary = [speakerJSONDictionary retain];
+	}
+	
+	return self;
+}
+
+#pragma mark -
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-	NSString *Name = [NSString stringWithFormat:
-					  @"%@ %@",
-					  [speakerDictionary objectForKey:@"FirstName"],
-					  [speakerDictionary objectForKey:@"LastName"]];
-	self.navigationItem.title = Name;
+	self.navigationItem.title = [TEDxAlcatrazGlobal nameStringFromJSONData:speakerDictionary];
 	
 	//Set up WebView, just temporary to improve development speed
 	NSString *urlAddress =	[NSString stringWithFormat:
-							@"http://www.tedxapps.com/mobile/speaker/?SpeakerId=%@",
-							[speakerDictionary objectForKey:@"SpeakerId"]
-							 ];
+							@"http://www.tedxapps.com/mobile/speaker/?SpeakerId=%d",
+							[TEDxAlcatrazGlobal speakerIdFromJSONData:speakerDictionary]];
 
-	NSURL *url = [ NSURL URLWithString: urlAddress ];
-	
-	NSURLRequest *requestObj = [ NSURLRequest requestWithURL: url ];
-		
-	[webView loadRequest:requestObj];
+	[super loadURLString:urlAddress];
 }
 
-/*
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-*/
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-	
-	self.webView = nil;
-}
-
+#pragma mark -
 
 - (void)dealloc {
 	[speakerDictionary release];
-	[webView release];
 	
     [super dealloc];
 }

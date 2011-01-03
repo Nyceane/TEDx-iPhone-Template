@@ -2,30 +2,18 @@
 //  MapController.h
 //  TEDxPSU
 //
-//  Created by Nyceane on 9/18/10.
+//  Created by Nyceane on 9/18/10. Updated by Michael May.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface AddressAnnotation : NSObject<MKAnnotation> {
-	CLLocationCoordinate2D coordinate;
-	
-	NSString *mTitle;
-	NSString *mSubTitle;
+@interface MapController : UIViewController <MKMapViewDelegate> {	
+	MKMapView *mapView;
 }
 
-@property (nonatomic, retain) NSString *mTitle;
-@property (nonatomic, retain) NSString *mSubTitle;
-
-
-@end
-
-@interface MapController : UIViewController <MKMapViewDelegate> {
-	
-	IBOutlet MKMapView *mapView;
-}
+@property (readonly, retain, nonatomic) IBOutlet MKMapView*  mapView;
 
 -(IBAction)btnDirection_Clicked;
 

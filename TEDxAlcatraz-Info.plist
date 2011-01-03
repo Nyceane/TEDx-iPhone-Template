@@ -28,10 +28,12 @@
 	<key>CFBundleSignature</key>
 	<string>TEDx</string>
 	<key>CFBundleVersion</key>
-	<string>1.01</string>
+	<string>1.20</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleBlackOpaque</string>
 </dict>
 </plist>

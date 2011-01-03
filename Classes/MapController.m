@@ -2,11 +2,32 @@
 //  MapController.m
 //  TEDxPSU
 //
-//  Created by Nyceane on 9/18/10.
+//  Created by Nyceane on 9/18/10. Updated by Michael May.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import "MapController.h"
+
+#define kVenueName @"Temple Nightclub"
+#define kVenueAddress @"540 Howard Street, San Francisco, California"
+#define kVenueLatitude 37.787835
+#define kVenueLongitude -122.397067
+
+#pragma mark -
+#pragma mark AddressAnnotation
+
+@interface AddressAnnotation : NSObject<MKAnnotation> {
+	CLLocationCoordinate2D coordinate;
+	
+	NSString *mTitle;
+	NSString *mSubTitle;
+}
+
+@property (nonatomic, retain) NSString *mTitle;
+@property (nonatomic, retain) NSString *mSubTitle;
+
+@end
+
 
 @implementation AddressAnnotation
 
@@ -19,31 +40,56 @@
 	return mTitle;
 }
 
--(id)initWithCoordinate:(CLLocationCoordinate2D) c{
-	coordinate=c;
+-(id)initWithCoordinate:(CLLocationCoordinate2D)c {
+	self = [super init];
+	
+	if(self) {
+		coordinate=c;
+	}
+	
 	return self;
+}
+
+-(void)dealloc {
+	[mTitle release];
+	[mSubTitle release];
+	
+	[super dealloc];
 }
 
 @end
 
+#pragma mark -
+#pragma mark MapController
+
+@interface MapController (InternalMethods) 
+@property (retain, nonatomic) IBOutlet MKMapView*  mapView;
+@end
+
 @implementation MapController
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
+
+@synthesize mapView;
+
+#pragma mark -
+
+-(IBAction)btnDirection_Clicked
+{
+	NSString *Address = [NSString stringWithFormat:kVenueAddress];
+	NSString *url = [NSString stringWithFormat:@"http://maps.google.com/maps?q=%@",
+					 [Address stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];	
 }
-*/
+
+#pragma mark -
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
 	CLLocationCoordinate2D location1;
-	location1.latitude = 37.787835;
-	location1.longitude = -122.397067;
+	location1.latitude = kVenueLatitude;
+	location1.longitude = kVenueLongitude;
 	
 	mapView.centerCoordinate = location1;
 
@@ -59,44 +105,29 @@
 	[mapView regionThatFits:region];
 
 	AddressAnnotation *location1Annotation = [[AddressAnnotation alloc] initWithCoordinate:location1];
-	location1Annotation.mTitle = @"Temple Nightclub";
-	location1Annotation.mSubTitle = @"540 Howard Street, San Francisco, California";
+	location1Annotation.mTitle = kVenueName;
+	location1Annotation.mSubTitle = kVenueAddress;
 
 	//Adds all 3 points
-	[mapView addAnnotation: location1Annotation];
+	[mapView addAnnotation:location1Annotation];
 	mapView.zoomEnabled = FALSE;
+	
+	[location1Annotation release];
 }
 
--(IBAction)btnDirection_Clicked
-{
-	NSString *Address = [NSString stringWithFormat: @"540 Howard Street, San Francisco, California"];
-	NSString *url = [NSString stringWithFormat: @"http://maps.google.com/maps?q=%@",
-					 [Address stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];	
-}
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
+#pragma mark -
 
 - (void)viewDidUnload {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+	
+	self.mapView = nil;
 }
 
-
 - (void)dealloc {
+	[mapView release];
+	
     [super dealloc];
 }
 

@@ -1,0 +1,5 @@
+Improved Responsiveness when selecting different tabs
+Improved memory management in general and under low memory conditions
+Fixed a number of memory leaks
+Added image caching for speaker images to reduce network load
+Minor UI tweaks
