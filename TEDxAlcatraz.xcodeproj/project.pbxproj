@@ -410,6 +410,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TEDxAlcatraz_Prefix.pch;
 				INFOPLIST_FILE = "TEDxAlcatraz-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = TEDxAlcatraz;
 			};
 			name = Debug;
@@ -423,6 +427,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TEDxAlcatraz_Prefix.pch;
 				INFOPLIST_FILE = "TEDxAlcatraz-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = TEDxAlcatraz;
 				VALIDATE_PRODUCT = YES;
 			};

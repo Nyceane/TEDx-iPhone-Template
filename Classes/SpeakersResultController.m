@@ -100,7 +100,7 @@
 	
 	NSString *requestString = [NSString stringWithFormat:
 							   @"http://www.paschar.com/wsdl/TEDxService.svc/GetSpeakersByEventId?eventid=%i&page=%i",
-							   kEventId,
+							   [TEDxAlcatrazGlobal eventIdentifier],
 							   kPages];
 	
 	NSURLRequest *newUserURLRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:requestString]];

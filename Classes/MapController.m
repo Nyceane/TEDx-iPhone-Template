@@ -30,11 +30,12 @@
 //
 
 #import "MapController.h"
+#import "TEDxAlcatrazGlobal.h"
 
-#define kVenueName @"Temple Nightclub"
-#define kVenueAddress @"540 Howard Street, San Francisco, California"
-#define kVenueLatitude 37.787835
-#define kVenueLongitude -122.397067
+//#define kVenueName @"Temple Nightclub"
+//#define kVenueAddress @"540 Howard Street, San Francisco, California"
+//#define kVenueLatitude 37.787835
+//#define kVenueLongitude -122.397067
 
 #pragma mark -
 #pragma mark AddressAnnotation
@@ -94,10 +95,15 @@
 @synthesize mapView;
 
 #pragma mark -
+#pragma mark Venue Details Dictionary from Main Bundle
+
+
+
+#pragma mark -
 
 -(IBAction)btnDirection_Clicked
 {
-	NSString *Address = [NSString stringWithFormat:kVenueAddress];
+	NSString *Address = [[TEDxAlcatrazGlobal venueDictionary] objectForKey:@"Address"]; //[NSString stringWithFormat:kVenueAddress];
 	NSString *url = [NSString stringWithFormat:@"http://maps.google.com/maps?q=%@",
 					 [Address stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	
@@ -110,9 +116,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+	NSDictionary *TEDxVenueDetails = [TEDxAlcatrazGlobal venueDictionary];
+	
 	CLLocationCoordinate2D location1;
-	location1.latitude = kVenueLatitude;
-	location1.longitude = kVenueLongitude;
+	{
+		NSNumber *venueLatitude = [TEDxVenueDetails objectForKey:@"Latitude"];
+		NSNumber *venueLongitude = [TEDxVenueDetails objectForKey:@"Longitude"];
+		location1.latitude = [venueLatitude doubleValue];//kVenueLatitude;
+		location1.longitude = [venueLongitude doubleValue];//kVenueLongitude;
+	}
 	
 	mapView.centerCoordinate = location1;
 
@@ -128,8 +140,8 @@
 	[mapView regionThatFits:region];
 
 	AddressAnnotation *location1Annotation = [[AddressAnnotation alloc] initWithCoordinate:location1];
-	location1Annotation.mTitle = kVenueName;
-	location1Annotation.mSubTitle = kVenueAddress;
+	location1Annotation.mTitle = [TEDxVenueDetails objectForKey:@"Name"]; //kVenueName;
+	location1Annotation.mSubTitle = [TEDxVenueDetails objectForKey:@"Address"]; //kVenueAddress;
 
 	//Adds all 3 points
 	[mapView addAnnotation:location1Annotation];

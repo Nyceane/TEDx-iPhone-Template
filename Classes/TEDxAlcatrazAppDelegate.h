@@ -34,8 +34,8 @@
 #import "TEDxAlcatrazGlobal.h"
 
 @interface TEDxAlcatrazAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-    UIWindow *window;
-    UITabBarController *tabBarController;
+    UIWindow			*window;
+    UITabBarController	*tabBarController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

@@ -32,15 +32,15 @@
 #import "InformationController.h"
 #import "TEDxAlcatrazGlobal.h"
 
-#define kTEDxInformationURL @"http://www.tedxapps.com/mobile/about/?EventId=13"
-#define kTEDxMailToURL @"mailto:TEDxAlcatraz@gmail.com?subject=iPhone%20TEDxAlcatraz%20Question&body=Hello%20"
+#define kTEDxInformationURL @"http://www.tedxapps.com/mobile/about/?EventId=%d"
+#define kTEDxMailToURL @"mailto:TEDxAlcatraz@gmail.com?subject=iPhone%20TEDxAlcatraz%20Question&body=Dear%20TEDx"
 
 @implementation InformationController
 
 @synthesize btnContact;
 
 - (void)viewDidLoad  {
-	[super loadURLString:kTEDxInformationURL];
+	[super loadURLString:[NSString stringWithFormat:kTEDxInformationURL, [TEDxAlcatrazGlobal eventIdentifier]]];
 }
 
 -(IBAction)btnEmail_Clicked {

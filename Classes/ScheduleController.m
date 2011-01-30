@@ -33,7 +33,7 @@
 
 #import "TEDxAlcatrazGlobal.h"
 
-#define kTEDxAppsEventURL @"http://www.tedxapps.com/mobile/schedule/?EventId=13"
+#define kTEDxAppsEventURL @"http://www.tedxapps.com/mobile/schedule/?EventId=%i"
 
 @implementation ScheduleController
 
@@ -41,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-	[super loadURLString:kTEDxAppsEventURL];
+	[super loadURLString:[NSString stringWithFormat:kTEDxAppsEventURL, [TEDxAlcatrazGlobal eventIdentifier]]];
 }
 
 @end

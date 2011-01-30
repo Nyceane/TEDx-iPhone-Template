@@ -31,7 +31,6 @@
 
 #import "TEDxAlcatrazAppDelegate.h"
 
-
 @implementation TEDxAlcatrazAppDelegate
 
 @synthesize window;

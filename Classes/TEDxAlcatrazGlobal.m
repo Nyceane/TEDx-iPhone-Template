@@ -63,5 +63,22 @@
 	return [[JSONDictionary objectForKey:@"SpeakerId"] intValue];
 }
 
+#pragma mark -
+
++(NSDictionary*)venueDictionary {
+	NSDictionary *TEDxVenue = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"TEDxVenue"];
+	
+	DAssert(TEDxVenue != nil, @"");
+	
+	return TEDxVenue;
+}
+
++(NSUInteger)eventIdentifier {
+	NSDictionary* TEDxVenueDetails = [TEDxAlcatrazGlobal venueDictionary];
+	NSNumber *eventIdNumber = [TEDxVenueDetails objectForKey:@"EventId"];
+	
+	return [eventIdNumber integerValue];
+}
+
 @end
 

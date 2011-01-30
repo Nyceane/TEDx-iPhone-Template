@@ -19,6 +19,8 @@
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.tedx.alcatraz</string>
+	<key>UIPrerenderedIcon</key>
+	<false/>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -28,12 +30,27 @@
 	<key>CFBundleSignature</key>
 	<string>TEDx</string>
 	<key>CFBundleVersion</key>
-	<string>1.20</string>
+	<string>100</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.22</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleBlackOpaque</string>
+	<key>TEDxVenue</key>
+	<dict>
+		<key>EventId</key>
+		<integer>13</integer>
+		<key>Name</key>
+		<string>Temple Nightclub</string>
+		<key>Address</key>
+		<string>540 Howard Street, San Francisco, California</string>
+		<key>Latitude</key>
+		<real>37.787835</real>
+		<key>Longitude</key>
+		<string>-122.397067</string>
+	</dict>
 </dict>
 </plist>
