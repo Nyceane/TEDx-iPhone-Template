@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>TEDxAlcatraz</string>
+	<string>TEDxObserver</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
@@ -18,7 +18,7 @@
 		<string>Icon-Small@2x.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.tedx.alcatraz</string>
+	<string>tedx.uk.co.guardian.www</string>
 	<key>UIPrerenderedIcon</key>
 	<false/>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -44,13 +44,15 @@
 		<key>EventId</key>
 		<integer>13</integer>
 		<key>Name</key>
-		<string>Temple Nightclub</string>
+		<string>Kings Place</string>
 		<key>Address</key>
-		<string>540 Howard Street, San Francisco, California</string>
+		<string>90 York Way, London, N1 9AG</string>
 		<key>Latitude</key>
-		<real>37.787835</real>
+		<real>51.535165</real>
 		<key>Longitude</key>
-		<string>-122.397067</string>
+		<string>-0.122223</string>
+		<key>EmailAddress</key>
+		<string>tedx.observer@guardian.co.uk</string>
 	</dict>
 </dict>
 </plist>

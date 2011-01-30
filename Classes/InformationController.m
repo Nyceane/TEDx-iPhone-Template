@@ -33,7 +33,7 @@
 #import "TEDxAlcatrazGlobal.h"
 
 #define kTEDxInformationURL @"http://www.tedxapps.com/mobile/about/?EventId=%d"
-#define kTEDxMailToURL @"mailto:TEDxAlcatraz@gmail.com?subject=iPhone%20TEDxAlcatraz%20Question&body=Dear%20TEDx"
+#define kTEDxMailToURL @"mailto:%@?subject=iPhone TEDx Question&body=Dear TEDx Organiser"
 
 @implementation InformationController
 
@@ -44,7 +44,10 @@
 }
 
 -(IBAction)btnEmail_Clicked {
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:kTEDxMailToURL]];
+	NSString *mailTo = [NSString stringWithFormat:kTEDxMailToURL, [TEDxAlcatrazGlobal emailAddress]];
+	NSString *mailToEncoded = [mailTo stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:mailToEncoded]];
 }
 
 #pragma mark -

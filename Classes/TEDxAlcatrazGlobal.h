@@ -67,4 +67,8 @@
 // returns the event id from the TEDxVenue dictionary in the Info.plist
 +(NSUInteger)eventIdentifier;
 
+// returns the email address from the TEDxVenue dictionary in the Info.plist
++(NSString*)emailAddress;
+
+
 @end

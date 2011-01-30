@@ -97,15 +97,20 @@
 #pragma mark -
 #pragma mark Venue Details Dictionary from Main Bundle
 
-
+// &ll=51.535165,-0.122223
 
 #pragma mark -
 
 -(IBAction)btnDirection_Clicked
 {
-	NSString *Address = [[TEDxAlcatrazGlobal venueDictionary] objectForKey:@"Address"]; //[NSString stringWithFormat:kVenueAddress];
-	NSString *url = [NSString stringWithFormat:@"http://maps.google.com/maps?q=%@",
-					 [Address stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	NSDictionary *TEDxVenueDetails = [TEDxAlcatrazGlobal venueDictionary];
+	NSString *Address = [TEDxVenueDetails objectForKey:@"Address"]; //[NSString stringWithFormat:kVenueAddress];
+	NSNumber *venueLatitude = [TEDxVenueDetails objectForKey:@"Latitude"];
+	NSNumber *venueLongitude = [TEDxVenueDetails objectForKey:@"Longitude"];
+	NSString *url = [NSString stringWithFormat:@"http://maps.google.com/maps?q=%@&ll=%f,%f",
+					 [Address stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+					 [venueLatitude doubleValue],
+					 [venueLongitude doubleValue]];
 	
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];	
 }

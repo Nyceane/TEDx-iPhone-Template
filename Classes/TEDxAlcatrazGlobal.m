@@ -68,7 +68,7 @@
 +(NSDictionary*)venueDictionary {
 	NSDictionary *TEDxVenue = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"TEDxVenue"];
 	
-	DAssert(TEDxVenue != nil, @"");
+	DAssert(TEDxVenue != nil, @"the venue dictionary is missing from the Info.plist");
 	
 	return TEDxVenue;
 }
@@ -77,8 +77,20 @@
 	NSDictionary* TEDxVenueDetails = [TEDxAlcatrazGlobal venueDictionary];
 	NSNumber *eventIdNumber = [TEDxVenueDetails objectForKey:@"EventId"];
 	
+	DAssert(eventIdNumber != nil, @"The event id is nil");
+	
 	return [eventIdNumber integerValue];
 }
+
++(NSString*)emailAddress {
+	NSDictionary* TEDxVenueDetails = [TEDxAlcatrazGlobal venueDictionary];
+	NSString *emailAddress = [TEDxVenueDetails objectForKey:@"EmailAddress"];
+	
+	DAssert(emailAddress != nil, @"The email address is nil");
+	
+	return emailAddress;
+}
+
 
 @end
 
