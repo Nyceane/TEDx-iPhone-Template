@@ -1,0 +1,38 @@
+How To Create Your Own TEDx App Using This Template
+
+TEDxAlcatraz-Info.plist
+----------------------
+Change the "Bundle display name" value your event name
+Change the "Bunble identifier" to something unique for you (tedx.uk.co.guardian)
+Change all of the values under the VenueDetails section to match your venue details. The EventId is supplied by www.tedxapps.com.
+
+Icons
+-----
+Create a set of icons to match the ones already in the app (overwrite them with yours). You can find a photoshop file in the Developer-Resources directory.
+
+Icon-72.png
+Icon-Small-50.png
+Icon-Small.png
+Icon.png
+Icon@2x.png
+
+Splash Screens
+--------------
+If you want, create splash screens your app in the various formats needed for iPad and iPhone. You can find a photoshop file the Developer-Resources directory.
+
+iPhone:
+iPhone-only applications may only have one launch image. It should be in PNG format and measure 320 x 480 pixels. Name your launch image file Default.png.
+
+For iPhone 4 high resolution, you can include an additional launch image. It should be in PNG formate and measure 640 x 960 pixels. Name it Default@2x.png. This image will get picked up by the iOS if your app is running on an iPhone 4.
+
+Default.png - default portrait launch
+Default@2x.png
+
+iPad:
+Create a launch image for each supported orientation in the PNG format. Each launch image must be 1004 x 768 pixels (for landscape) or 748 x 1024 pixels (for portrait).
+Default-PortraitUpsideDown.png - upside-down portrait version
+Default-LandscapeLeft.png - left-oriented landscape version
+Default-LandscapeRight.png - right-oriented landscape version
+Default-Portrait.png - generic portrait version.
+Default-Landscape.png - generic landscape version
+
