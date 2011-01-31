@@ -90,6 +90,12 @@
 
 #pragma mark -
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	return YES;
+}
+
+#pragma mark -
+
 - (void)viewDidLoad  {
 	[super loadURLString:[NSString stringWithFormat:kTEDxInformationURL, [TEDxAlcatrazGlobal eventIdentifier]]];
 }

@@ -44,4 +44,10 @@
 	[super loadURLString:[NSString stringWithFormat:kTEDxAppsEventURL, [TEDxAlcatrazGlobal eventIdentifier]]];
 }
 
+#pragma mark -
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	return YES;
+}
+
 @end

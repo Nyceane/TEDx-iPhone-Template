@@ -5,3 +5,5 @@ We should probably internationalise the app and get all the text strings into a 
 If there is any chance that the images will change in the future, or the id's reused, we need a way to purge the cache of images.
 
 We could really do with caching the speakers JSON and the web content too, in some semi-permanent way.
+
+We need to support all orientations for the iPad

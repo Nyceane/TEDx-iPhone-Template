@@ -64,6 +64,12 @@
 
 #pragma mark -
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	return YES;
+}
+
+#pragma mark -
+
 - (void)dealloc {
 	[speakerDictionary release];
 	
