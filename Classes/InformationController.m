@@ -35,6 +35,7 @@
 #define kTEDxInformationURL @"http://www.tedxapps.com/mobile/about/?EventId=%d"
 #define kTEDxMailToSubject @"iPhone TEDx Question"
 #define kTEDxMailToBody @"Dear TEDx Organiser"
+#define kTEDxMailToURL @"mailto:%@?subject=iPhone TEDx Question&body=Dear TEDx Organiser"
 
 @implementation InformationController
 
@@ -56,7 +57,10 @@
 
 		[self presentModalViewController:mcvc animated:YES];
 	} else {
-		//TODO: error
+		NSString *mailTo = [NSString stringWithFormat:kTEDxMailToURL, [TEDxAlcatrazGlobal emailAddress]];
+		NSString *mailToEncoded = [mailTo stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+		
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:mailToEncoded]];
 	}
 }
 
@@ -64,7 +68,15 @@
 	[self dismissModalViewControllerAnimated:YES];
 	
 	if(error != nil && error.code != NSUserCancelledError) {
-		// tell user what went wrong
+		UIAlertView *mailFailureAlert = [[UIAlertView alloc] initWithTitle:@"Cannot Send Email"
+																   message:[error localizedDescription]
+																  delegate:nil
+														 cancelButtonTitle:@"OK" 
+														 otherButtonTitles:nil];
+		
+		[mailFailureAlert show];
+		
+		[mailFailureAlert release];
 	}
 	
 	[controller release];
