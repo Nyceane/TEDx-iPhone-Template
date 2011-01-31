@@ -40,8 +40,13 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+	
+	[super setColouredBackgroundForWebView:[UIColor blackColor]];	
 	[super loadURLString:[NSString stringWithFormat:kTEDxAppsEventURL, [TEDxAlcatrazGlobal eventIdentifier]]];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
 }
 
 #pragma mark -

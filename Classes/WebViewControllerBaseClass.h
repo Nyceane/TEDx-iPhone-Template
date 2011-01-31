@@ -41,6 +41,8 @@
 
 @property (readonly, nonatomic, retain) IBOutlet UIWebView *webView;
 
+-(void)setColouredBackgroundForWebView:(UIColor*)aColor;
+
 - (void)loadURLString:(NSString*)URLString;
 
 @end

@@ -44,6 +44,19 @@
 
 #pragma mark -
 
+#define kColouredBackgroundHTML @"<html><head></head><body style=\"background-color:transparent\">&nbsp;</body></html>"
+
+// call this at viewDidAppear time, before loading aything else to 
+// ensure the view starts with a defined colored background
+-(void)setColouredBackgroundForWebView:(UIColor*)aColor {
+	webView.backgroundColor = aColor;
+	webView.opaque = NO;	
+	
+	[webView loadHTMLString:kColouredBackgroundHTML baseURL:nil];
+}
+
+#pragma mark -
+
 - (void)webViewDidStartLoad:(UIWebView *)webView {
 	DLog(@"webViewDidStartLoad");
 	
