@@ -33,21 +33,53 @@
 #import "TEDxAlcatrazGlobal.h"
 
 #define kTEDxInformationURL @"http://www.tedxapps.com/mobile/about/?EventId=%d"
-#define kTEDxMailToURL @"mailto:%@?subject=iPhone TEDx Question&body=Dear TEDx Organiser"
+#define kTEDxMailToSubject @"iPhone TEDx Question"
+#define kTEDxMailToBody @"Dear TEDx Organiser"
 
 @implementation InformationController
 
 @synthesize btnContact;
 
-- (void)viewDidLoad  {
-	[super loadURLString:[NSString stringWithFormat:kTEDxInformationURL, [TEDxAlcatrazGlobal eventIdentifier]]];
+#pragma mark -
+
+#pragma mark -
+#pragma mark MFMailComposeViewControllerDelegate Delegate callbacks
+
+- (void)actionMailTo:(NSString*)to subject:(NSString*)subject body:(NSString*)body  {
+	if([MFMailComposeViewController canSendMail]) {		
+		MFMailComposeViewController* mcvc = [[MFMailComposeViewController alloc] init];
+		
+		[mcvc setToRecipients:[NSArray arrayWithObject:to]];
+		[mcvc setSubject:subject];
+		[mcvc setMessageBody:body isHTML:NO];
+		[mcvc setMailComposeDelegate:self];
+
+		[self presentModalViewController:mcvc animated:YES];
+	} else {
+		//TODO: error
+	}
 }
 
--(IBAction)btnEmail_Clicked {
-	NSString *mailTo = [NSString stringWithFormat:kTEDxMailToURL, [TEDxAlcatrazGlobal emailAddress]];
-	NSString *mailToEncoded = [mailTo stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+	[self dismissModalViewControllerAnimated:YES];
 	
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:mailToEncoded]];
+	if(error != nil && error.code != NSUserCancelledError) {
+		// tell user what went wrong
+	}
+	
+	[controller release];
+}
+
+#pragma mark -
+
+-(IBAction)btnEmail_Clicked {
+	[self actionMailTo:[TEDxAlcatrazGlobal emailAddress] subject:kTEDxMailToSubject body:kTEDxMailToBody];
+}
+
+#pragma mark -
+
+- (void)viewDidLoad  {
+	[super loadURLString:[NSString stringWithFormat:kTEDxInformationURL, [TEDxAlcatrazGlobal eventIdentifier]]];
 }
 
 #pragma mark -

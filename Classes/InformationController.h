@@ -21,6 +21,7 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  */
+
 //
 //  InformationController.h
 //  TEDxTransmedia
@@ -30,9 +31,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MFMailComposeViewController.h>
+
 #import "WebViewControllerBaseClass.h"
 
-@interface InformationController : WebViewControllerBaseClass {
+@interface InformationController : WebViewControllerBaseClass <MFMailComposeViewControllerDelegate> {
 	UIBarButtonItem *btnContact;
 }
 
