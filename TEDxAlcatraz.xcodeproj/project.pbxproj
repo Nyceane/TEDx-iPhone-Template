@@ -51,6 +51,8 @@
 		663B9B0512D209F800C75B08 /* WebViewControllerBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 663B9B0412D209F800C75B08 /* WebViewControllerBaseClass.m */; };
 		663B9B6612D20FE500C75B08 /* TEDxAlcatrazGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 663B9B6512D20FE500C75B08 /* TEDxAlcatrazGlobal.m */; };
 		6650AB7C12D22750006A32B9 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6650AB7B12D22750006A32B9 /* Entitlements.plist */; };
+		6666E81C12F75C13004752F3 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 6666E81A12F75C13004752F3 /* Default-Landscape.png */; };
+		6666E81D12F75C13004752F3 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 6666E81B12F75C13004752F3 /* Default-Portrait.png */; };
 		668608E212D23ED5002A8A23 /* SpeakersResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 668608E112D23ED5002A8A23 /* SpeakersResultTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +119,8 @@
 		663B9B0412D209F800C75B08 /* WebViewControllerBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewControllerBaseClass.m; sourceTree = "<group>"; };
 		663B9B6512D20FE500C75B08 /* TEDxAlcatrazGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDxAlcatrazGlobal.m; sourceTree = "<group>"; };
 		6650AB7B12D22750006A32B9 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		6666E81A12F75C13004752F3 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		6666E81B12F75C13004752F3 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 		668608E012D23ED5002A8A23 /* SpeakersResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakersResultTableViewCell.h; sourceTree = "<group>"; };
 		668608E112D23ED5002A8A23 /* SpeakersResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakersResultTableViewCell.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TEDxAlcatraz-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TEDxAlcatraz-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -301,6 +305,8 @@
 			children = (
 				662B4A0612F74B9800DD17AF /* Default.png */,
 				662B4A0712F74B9800DD17AF /* Default@2x.png */,
+				6666E81A12F75C13004752F3 /* Default-Landscape.png */,
+				6666E81B12F75C13004752F3 /* Default-Portrait.png */,
 			);
 			name = Defaults;
 			sourceTree = "<group>";
@@ -386,6 +392,8 @@
 				6650AB7C12D22750006A32B9 /* Entitlements.plist in Resources */,
 				662B4A0812F74B9800DD17AF /* Default.png in Resources */,
 				662B4A0912F74B9800DD17AF /* Default@2x.png in Resources */,
+				6666E81C12F75C13004752F3 /* Default-Landscape.png in Resources */,
+				6666E81D12F75C13004752F3 /* Default-Portrait.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
