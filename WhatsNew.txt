@@ -1,3 +1,11 @@
+1.22
+Moved the venue details from being hard coded in the app into the Info.plist so that it's easier for people to configure their app
+Added Default.png images
+Added in-app email
+TEDxObserver Icons
+
+
+1.21
 Improved Responsiveness when selecting different tabs
 Improved memory management in general and under low memory conditions
 Fixed a number of memory leaks
