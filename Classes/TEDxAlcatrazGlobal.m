@@ -52,9 +52,9 @@
 }
 
 +(NSString*)photoURLFromJSONData:(NSDictionary*)JSONDictionary {
-	DAssert([[JSONDictionary objectForKey:@"PhotoURL"] isKindOfClass:[NSString class]], @"PhotoURL is not a string");
+	DAssert([[JSONDictionary objectForKey:@"PhotoUrl"] isKindOfClass:[NSString class]], @"PhotoURL is not a string");
 	
-	return [JSONDictionary objectForKey:@"PhotoURL"];	
+	return [JSONDictionary objectForKey:@"PhotoUrl"];	
 }
 
 +(NSInteger)speakerIdFromJSONData:(NSDictionary*)JSONDictionary {
