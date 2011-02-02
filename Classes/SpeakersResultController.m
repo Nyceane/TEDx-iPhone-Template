@@ -99,7 +99,7 @@
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
 	NSString *requestString = [NSString stringWithFormat:
-							   @"http://www.paschar.com/wsdl/TEDxService.svc/GetSpeakersByEventId?eventid=%i&page=%i",
+							   @"http://www.tedxapps.com/wsdl/TEDxService.svc/GetSpeakersByEventId?eventid=%i&page=%i",
 							   [TEDxAlcatrazGlobal eventIdentifier],
 							   kPages];
 	
