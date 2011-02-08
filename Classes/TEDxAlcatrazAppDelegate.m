@@ -40,8 +40,10 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Add the tab bar controller's view to the window and display.
+	
+	self.tabBarController = tabBarController;
     [window addSubview:tabBarController.view];
     [window makeKeyAndVisible];
 
@@ -84,6 +86,10 @@
      Called when the application is about to terminate.
      See also applicationDidEnterBackground:.
      */
+}
+
+- (void)hideTabBar{
+	self.tabBarController.tabBar.hidden = TRUE;
 }
 
 

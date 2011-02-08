@@ -31,12 +31,18 @@
 
 #import <UIKit/UIKit.h>
 #import "WebViewControllerBaseClass.h"
+#import "CatchNotesLauncher.h"
 
 @interface SpeakerDetailController : WebViewControllerBaseClass {
+	UISegmentedControl *actionControls;
+	UIToolbar *speakerToolBar;
 @private	
 	NSDictionary *speakerDictionary;
 }
 
--(id)initWithSpeaker:(NSDictionary*)speakerJSONDictionary;
+@property (nonatomic, retain) IBOutlet UISegmentedControl *actionControls;
+@property (nonatomic, retain) IBOutlet UIToolbar *speakerToolBar;
 
+- (id)initWithSpeaker:(NSDictionary*)speakerJSONDictionary;
+- (IBAction)switchNote_Clicked:(id)sender;
 @end

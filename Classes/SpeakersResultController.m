@@ -86,8 +86,8 @@
 	NSString* path = [self tempPathForSpeakerImage:speaker];
 
 	BOOL success = [[NSFileManager defaultManager] createFileAtPath:path 
-															contents:UIImagePNGRepresentation(image)
-														  attributes:nil];
+														   contents:UIImagePNGRepresentation(image)
+														attributes:nil];
 	
 	DLog(@"Set Image:Path:%@ Success:%d", path, success);
 }

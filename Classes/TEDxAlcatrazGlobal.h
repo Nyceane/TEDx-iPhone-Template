@@ -59,6 +59,8 @@
 
 +(NSString*)photoURLFromJSONData:(NSDictionary*)JSONDictionary;
 
++(NSString*)DescriptionFromJSONData:(NSDictionary*)JSONDictionary;
+
 +(NSInteger)speakerIdFromJSONData:(NSDictionary*)JSONDictionary;
 
 // returns the TEDxVenue dictionary from the Info.plist, which contains the venue id, address, etc
@@ -70,5 +72,5 @@
 // returns the email address from the TEDxVenue dictionary in the Info.plist
 +(NSString*)emailAddress;
 
-
+static NSString* const CONFERENCE_TAG = @"#TED2011";
 @end

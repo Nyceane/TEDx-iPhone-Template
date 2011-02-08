@@ -57,6 +57,12 @@
 	return [JSONDictionary objectForKey:@"PhotoUrl"];	
 }
 
++(NSString*)DescriptionFromJSONData:(NSDictionary*)JSONDictionary {
+	DAssert([[JSONDictionary objectForKey:@"Description"] isKindOfClass:[NSString class]], @"Description is not a string");
+	
+	return [JSONDictionary objectForKey:@"Description"];	
+}
+
 +(NSInteger)speakerIdFromJSONData:(NSDictionary*)JSONDictionary {
 	DAssert([[JSONDictionary objectForKey:@"SpeakerId"] isKindOfClass:[NSNumber class]], @"Speaker Id is not a number");
 	

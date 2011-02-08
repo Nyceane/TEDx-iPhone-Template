@@ -29,11 +29,13 @@
 //  Copyright 2010 Peter Ma. All rights reserved.
 //
 
+#import "TEDxAlcatrazAppDelegate.h"
 #import "SpeakerDetailController.h"
 #import "TEDxAlcatrazGlobal.h"
+#import "CatchNotesLauncher.h"
 
 @implementation SpeakerDetailController
-
+@synthesize actionControls, speakerToolBar;
 #pragma mark -
 
 -(id)initWithSpeaker:(NSDictionary*)speakerJSONDictionary {
@@ -47,20 +49,127 @@
 }
 
 #pragma mark -
+- (void)displayTabBar:(BOOL)hide
+{
+	UIView *view = ((TEDxAlcatrazAppDelegate*)[UIApplication sharedApplication].delegate).tabBarController.view;
+	UITabBar * tabbar = ((TEDxAlcatrazAppDelegate*)[UIApplication sharedApplication].delegate).tabBarController.tabBar;
+	CGRect viewFrame = view.frame;
+
+	if(hide)
+	{
+		tabbar.alpha = 0.0;
+		viewFrame.size.height += 40;
+		viewFrame.origin.y += 20;
+
+		[UIView beginAnimations:nil context:nil];
+		[UIView setAnimationDuration:0.75];
+	
+		view.frame = viewFrame;
+		[UIView commitAnimations];
+	}
+	else {
+		tabbar.alpha = 1.0;
+		viewFrame.size.height -= 40;
+		viewFrame.origin.y -= 20;
+		
+		[UIView beginAnimations:nil context:nil];
+		[UIView setAnimationDuration:0.3];
+		
+		view.frame = viewFrame;
+		[UIView commitAnimations];
+	}
+}
+
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-	self.navigationItem.title = [TEDxAlcatrazGlobal nameStringFromJSONData:speakerDictionary];
+	//Hide Tabbar
+	[self displayTabBar:YES];
 	
+	self.navigationItem.title = [TEDxAlcatrazGlobal nameStringFromJSONData:speakerDictionary];
+
 	//Set up WebView, just temporary to improve development speed
 	NSString *urlAddress =	[NSString stringWithFormat:
 							@"http://www.tedxapps.com/mobile/speaker/?SpeakerId=%d",
 							[TEDxAlcatrazGlobal speakerIdFromJSONData:speakerDictionary]];
 
 	[super loadURLString:urlAddress];
+
+	NSLog(@"origin 1: y:%@", NSStringFromCGRect(((TEDxAlcatrazAppDelegate*)[UIApplication sharedApplication].delegate).tabBarController.tabBar.frame));
+
 }
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+	UIView *view = ((TEDxAlcatrazAppDelegate*)[UIApplication sharedApplication].delegate).tabBarController.view;
+	CGRect viewFrame = view.frame;
+	viewFrame.size.height += 30;
+	view.frame = viewFrame;
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+}
+
+- (void)createCatchNoteWithText:(NSString*)text
+{
+	[CatchNotesLauncher createNewNoteWithText:text cursorAt:0 
+							  bounceOnSave:@"catchhaj://catch-return/saved" 
+							bounceOnCancel:@"catchhaj://catch-return/cancelled" 
+						fromViewController:self];
+}
+
+- (void)addPhotoNote{
+
+}
+
+- (void)addTextNote{
+	NSMutableString *notes = [NSMutableString string];
+	[notes appendString: [TEDxAlcatrazGlobal nameStringFromJSONData:speakerDictionary]];	
+	[notes appendString: @"\nTitle:"];
+	[notes appendString: [TEDxAlcatrazGlobal titleFromJSONData:speakerDictionary]];	
+	[notes appendString: @"\nBio:"];
+	[notes appendString: [TEDxAlcatrazGlobal DescriptionFromJSONData:speakerDictionary]];
+	
+	[notes appendString: @"\n\n"];
+	[notes appendString: CONFERENCE_TAG];
+	[notes appendString: @" #"];
+
+	//Now Getting Speaker Name
+	NSString *speakername = [[TEDxAlcatrazGlobal nameStringFromJSONData:speakerDictionary] stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+	[notes appendString: speakername];
+	[self createCatchNoteWithText:notes];
+}
+
+- (void)ShowNotes{
+	NSMutableString *tags = [NSMutableString string];
+	[tags appendString: CONFERENCE_TAG];
+	[tags appendString: @" #"];
+
+	//Now Getting Speaker Name
+	NSString *speakername = [[TEDxAlcatrazGlobal nameStringFromJSONData:speakerDictionary] stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+	[tags appendString: speakername];
+
+	[CatchNotesLauncher showNotesMatchingText:tags fromViewController:self];
+}
+
+- (IBAction)switchNote_Clicked:(id)sender{
+	switch (actionControls.selectedSegmentIndex) {
+		case 0:
+			[self addPhotoNote];
+			break;
+		case 1:
+			[self addTextNote];
+			break;
+		case 2:
+			[self ShowNotes];
+			break;
+	}
+	[actionControls setSelectedSegmentIndex:-1];
+}
+
 
 #pragma mark -
 
@@ -71,8 +180,10 @@
 #pragma mark -
 
 - (void)dealloc {
+	[self displayTabBar:NO];
+	[actionControls release];
 	[speakerDictionary release];
-	
+	[speakerToolBar release];
     [super dealloc];
 }
 
