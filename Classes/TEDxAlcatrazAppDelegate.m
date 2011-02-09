@@ -50,6 +50,24 @@
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+	// ANDREAS: After user saves or cancels in Catch Notes, you end up back here with 
+	// either catchhaj://catch-return/saved or catchhaj://catch-return/cancelled
+	
+	if ([[url scheme] isEqualToString:@"catchted"]) {
+		
+		if ([[url path] isEqualToString:@"/saved"]) {
+			// DO SOMETHING
+		} else if ([[url path] isEqualToString:@"/cancelled"]) {
+			// DO SOMETHING ELSE
+		}
+		
+		return YES;
+	}
+	
+	return NO;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
@@ -86,10 +104,6 @@
      Called when the application is about to terminate.
      See also applicationDidEnterBackground:.
      */
-}
-
-- (void)hideTabBar{
-	self.tabBarController.tabBar.hidden = TRUE;
 }
 
 

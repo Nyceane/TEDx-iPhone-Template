@@ -96,9 +96,6 @@
 							[TEDxAlcatrazGlobal speakerIdFromJSONData:speakerDictionary]];
 
 	[super loadURLString:urlAddress];
-
-	NSLog(@"origin 1: y:%@", NSStringFromCGRect(((TEDxAlcatrazAppDelegate*)[UIApplication sharedApplication].delegate).tabBarController.tabBar.frame));
-
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -116,14 +113,11 @@
 - (void)createCatchNoteWithText:(NSString*)text
 {
 	[CatchNotesLauncher createNewNoteWithText:text cursorAt:0 
-							  bounceOnSave:@"catchhaj://catch-return/saved" 
-							bounceOnCancel:@"catchhaj://catch-return/cancelled" 
+							  bounceOnSave:@"catchted://catch-return/saved" 
+							bounceOnCancel:@"catchted://catch-return/cancelled" 
 						fromViewController:self];
 }
 
-- (void)addPhotoNote{
-
-}
 
 - (void)addTextNote{
 	NSMutableString *notes = [NSMutableString string];
@@ -158,12 +152,9 @@
 - (IBAction)switchNote_Clicked:(id)sender{
 	switch (actionControls.selectedSegmentIndex) {
 		case 0:
-			[self addPhotoNote];
-			break;
-		case 1:
 			[self addTextNote];
 			break;
-		case 2:
+		case 1:
 			[self ShowNotes];
 			break;
 	}
